@@ -36,7 +36,7 @@
                                 <rect key="frame" x="171" y="247" width="258" height="30"/>
                                 <state key="normal" title="Técnicas de Operativa Táctica Policial"/>
                                 <connections>
-                                    <segue destination="jWf-94-omM" kind="show" id="F8u-d2-eg3"/>
+                                    <segue destination="cMN-0J-4b0" kind="show" id="3b0-b1-hy4"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -108,21 +108,31 @@
             <point key="canvasLocation" x="2334" y="1389"/>
         </scene>
         <!--Técnicas de Operativa Táctica Policial-->
-        <scene sceneID="GJb-mX-3d6">
+        <scene sceneID="mZg-ae-F6C">
             <objects>
-                <viewController id="jWf-94-omM" customClass="TecnicasVC" customModule="OTP" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="q63-nr-SJi"/>
-                        <viewControllerLayoutGuide type="bottom" id="8a5-ZW-evk"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="A9w-bj-7iF">
+                <tableViewController id="cMN-0J-4b0" customClass="te" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="2R5-8C-I3V">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="Técnicas de Operativa Táctica Policial" id="WcC-q1-M4E"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="rbC-id-2td" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="ds5-wG-byu">
+                                <rect key="frame" x="0.0" y="92" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ds5-wG-byu" id="B6R-Q2-e7y">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="cMN-0J-4b0" id="3H0-L5-CcD"/>
+                            <outlet property="delegate" destination="cMN-0J-4b0" id="agS-SI-WdR"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Técnicas de Operativa Táctica Policial" id="Oo9-HU-010"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xBo-nz-PDi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2334" y="-120"/>
         </scene>

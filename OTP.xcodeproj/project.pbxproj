@@ -14,6 +14,10 @@
 		B92DDEE51CAE77BE00D2C34C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B92DDEE31CAE77BE00D2C34C /* LaunchScreen.storyboard */; };
 		B92DDEF01CAE77BE00D2C34C /* OTPTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B92DDEEF1CAE77BE00D2C34C /* OTPTests.swift */; };
 		B92DDEFB1CAE77BE00D2C34C /* OTPUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B92DDEFA1CAE77BE00D2C34C /* OTPUITests.swift */; };
+		B92DDF0D1CAE800C00D2C34C /* InicioVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B92DDF0C1CAE800C00D2C34C /* InicioVC.swift */; };
+		B92DDF0F1CAE80C100D2C34C /* EscuelaVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B92DDF0E1CAE80C100D2C34C /* EscuelaVC.swift */; };
+		B92DDF111CAE830B00D2C34C /* DirectorVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B92DDF101CAE830B00D2C34C /* DirectorVC.swift */; };
+		B92DDF151CAE84B100D2C34C /* TecnicasVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B92DDF141CAE84B100D2C34C /* TecnicasVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +51,10 @@
 		B92DDEF61CAE77BE00D2C34C /* OTPUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OTPUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B92DDEFA1CAE77BE00D2C34C /* OTPUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPUITests.swift; sourceTree = "<group>"; };
 		B92DDEFC1CAE77BE00D2C34C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B92DDF0C1CAE800C00D2C34C /* InicioVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InicioVC.swift; sourceTree = "<group>"; };
+		B92DDF0E1CAE80C100D2C34C /* EscuelaVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EscuelaVC.swift; sourceTree = "<group>"; };
+		B92DDF101CAE830B00D2C34C /* DirectorVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DirectorVC.swift; sourceTree = "<group>"; };
+		B92DDF141CAE84B100D2C34C /* TecnicasVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TecnicasVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,10 +107,14 @@
 			children = (
 				B92DDEDA1CAE77BE00D2C34C /* AppDelegate.swift */,
 				B92DDEDC1CAE77BE00D2C34C /* ViewController.swift */,
+				B92DDF141CAE84B100D2C34C /* TecnicasVC.swift */,
 				B92DDEDE1CAE77BE00D2C34C /* Main.storyboard */,
+				B92DDF101CAE830B00D2C34C /* DirectorVC.swift */,
+				B92DDF0E1CAE80C100D2C34C /* EscuelaVC.swift */,
 				B92DDEE11CAE77BE00D2C34C /* Assets.xcassets */,
 				B92DDEE31CAE77BE00D2C34C /* LaunchScreen.storyboard */,
 				B92DDEE61CAE77BE00D2C34C /* Info.plist */,
+				B92DDF0C1CAE800C00D2C34C /* InicioVC.swift */,
 			);
 			path = OTP;
 			sourceTree = "<group>";
@@ -193,6 +205,7 @@
 				TargetAttributes = {
 					B92DDED61CAE77BE00D2C34C = {
 						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = 978QFUFW97;
 					};
 					B92DDEEA1CAE77BE00D2C34C = {
 						CreatedOnToolsVersion = 7.2.1;
@@ -256,6 +269,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B92DDF0D1CAE800C00D2C34C /* InicioVC.swift in Sources */,
+				B92DDF111CAE830B00D2C34C /* DirectorVC.swift in Sources */,
+				B92DDF151CAE84B100D2C34C /* TecnicasVC.swift in Sources */,
+				B92DDF0F1CAE80C100D2C34C /* EscuelaVC.swift in Sources */,
 				B92DDEDD1CAE77BE00D2C34C /* ViewController.swift in Sources */,
 				B92DDEDB1CAE77BE00D2C34C /* AppDelegate.swift in Sources */,
 			);
@@ -399,10 +416,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = OTP/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.miguelperezprado.OTP;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -410,10 +430,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = OTP/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.miguelperezprado.OTP;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

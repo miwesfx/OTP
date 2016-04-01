@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="14F1713" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="IYH-RG-EqD">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--OTP-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="InicioVC" customModule="OTP" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +17,180 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2pb-R3-hTQ">
+                                <rect key="frame" x="182" y="285" width="236" height="30"/>
+                                <state key="normal" title="Escuela Prevención de la Violencia"/>
+                                <connections>
+                                    <segue destination="Q5b-9F-ylf" kind="show" id="Iro-3J-NfF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J7Z-HY-vTE">
+                                <rect key="frame" x="256" y="323" width="88" height="30"/>
+                                <state key="normal" title="Director EPV"/>
+                                <connections>
+                                    <segue destination="ntY-Ud-oba" kind="show" id="GNR-lq-ejK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wl0-p5-0W9">
+                                <rect key="frame" x="171" y="247" width="258" height="30"/>
+                                <state key="normal" title="Técnicas de Operativa Táctica Policial"/>
+                                <connections>
+                                    <segue destination="jWf-94-omM" kind="show" id="F8u-d2-eg3"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="J7Z-HY-vTE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6aI-Hf-lmx"/>
+                            <constraint firstItem="2pb-R3-hTQ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="83A-Xo-pnD"/>
+                            <constraint firstItem="2pb-R3-hTQ" firstAttribute="top" secondItem="Wl0-p5-0W9" secondAttribute="bottom" constant="8" id="Y16-I3-M2y"/>
+                            <constraint firstItem="2pb-R3-hTQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aWx-eI-D4D"/>
+                            <constraint firstItem="J7Z-HY-vTE" firstAttribute="top" secondItem="2pb-R3-hTQ" secondAttribute="bottom" constant="8" id="q2U-2T-S6E"/>
+                            <constraint firstItem="Wl0-p5-0W9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rxJ-7v-BaX"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="OTP" id="N5k-eQ-AL9"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1583" y="602"/>
+        </scene>
+        <!--Director EPV-->
+        <scene sceneID="3kl-bb-Nqp">
+            <objects>
+                <viewController id="ntY-Ud-oba" customClass="DirectorVC" customModule="OTP" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3QC-UA-sGL"/>
+                        <viewControllerLayoutGuide type="bottom" id="t45-OD-jMM"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="S08-JA-cG9">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="KZH-nD-QZw">
+                                <rect key="frame" x="20" y="72" width="560" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="d33-Tq-vlm"/>
+                                </constraints>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="3r1-Yv-d39">
+                                <rect key="frame" x="20" y="230" width="560" height="350"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="3r1-Yv-d39" firstAttribute="leading" secondItem="S08-JA-cG9" secondAttribute="leadingMargin" id="0cN-HN-Dvo"/>
+                            <constraint firstItem="t45-OD-jMM" firstAttribute="top" secondItem="3r1-Yv-d39" secondAttribute="bottom" constant="20" id="DnG-T4-tlv"/>
+                            <constraint firstItem="KZH-nD-QZw" firstAttribute="leading" secondItem="S08-JA-cG9" secondAttribute="leadingMargin" id="Do2-nL-Fpl"/>
+                            <constraint firstItem="3r1-Yv-d39" firstAttribute="top" secondItem="KZH-nD-QZw" secondAttribute="bottom" constant="8" id="JTI-3T-EXW"/>
+                            <constraint firstItem="3r1-Yv-d39" firstAttribute="top" secondItem="KZH-nD-QZw" secondAttribute="bottom" constant="8" id="Kbv-Zl-gVx"/>
+                            <constraint firstItem="3r1-Yv-d39" firstAttribute="top" secondItem="KZH-nD-QZw" secondAttribute="bottom" constant="8" id="Sfu-n0-kR2"/>
+                            <constraint firstItem="3r1-Yv-d39" firstAttribute="top" secondItem="KZH-nD-QZw" secondAttribute="bottom" constant="8" id="fIC-mZ-osE"/>
+                            <constraint firstItem="KZH-nD-QZw" firstAttribute="top" secondItem="3QC-UA-sGL" secondAttribute="bottom" constant="8" id="i3t-hu-MJZ"/>
+                            <constraint firstItem="3r1-Yv-d39" firstAttribute="trailing" secondItem="S08-JA-cG9" secondAttribute="trailingMargin" id="mXz-BS-MiU"/>
+                            <constraint firstItem="KZH-nD-QZw" firstAttribute="trailing" secondItem="S08-JA-cG9" secondAttribute="trailingMargin" id="rz6-Pa-ySS"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Director EPV" id="t0B-ub-ho4"/>
+                    <connections>
+                        <outlet property="banner" destination="KZH-nD-QZw" id="S9P-YH-zs6"/>
+                        <outlet property="imagen" destination="KZH-nD-QZw" id="6CO-4i-5xv"/>
+                        <outlet property="texto" destination="3r1-Yv-d39" id="q4m-2o-lf6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SEa-EN-PSs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2334" y="1389"/>
+        </scene>
+        <!--Técnicas de Operativa Táctica Policial-->
+        <scene sceneID="GJb-mX-3d6">
+            <objects>
+                <viewController id="jWf-94-omM" customClass="TecnicasVC" customModule="OTP" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="q63-nr-SJi"/>
+                        <viewControllerLayoutGuide type="bottom" id="8a5-ZW-evk"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="A9w-bj-7iF">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Técnicas de Operativa Táctica Policial" id="WcC-q1-M4E"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rbC-id-2td" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2334" y="-120"/>
+        </scene>
+        <!--Escuela de Prevención de la Violencia-->
+        <scene sceneID="SGj-dn-cgs">
+            <objects>
+                <viewController id="Q5b-9F-ylf" customClass="EscuelaVC" customModule="OTP" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="BcP-nn-xJQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="V75-g1-26T"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="vjD-si-N5h">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6Fk-EV-ydc">
+                                <rect key="frame" x="20" y="72" width="560" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="7lD-5h-qpG"/>
+                                </constraints>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="kBl-1R-06D">
+                                <rect key="frame" x="20" y="230" width="560" height="350"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="6Fk-EV-ydc" firstAttribute="top" secondItem="BcP-nn-xJQ" secondAttribute="bottom" constant="8" id="2R6-3b-dZM"/>
+                            <constraint firstItem="V75-g1-26T" firstAttribute="top" secondItem="kBl-1R-06D" secondAttribute="bottom" constant="20" id="73U-P7-1nd"/>
+                            <constraint firstItem="kBl-1R-06D" firstAttribute="trailing" secondItem="vjD-si-N5h" secondAttribute="trailingMargin" id="NCp-e3-BfJ"/>
+                            <constraint firstItem="6Fk-EV-ydc" firstAttribute="trailing" secondItem="vjD-si-N5h" secondAttribute="trailingMargin" id="RWF-X8-c8O"/>
+                            <constraint firstItem="kBl-1R-06D" firstAttribute="top" secondItem="6Fk-EV-ydc" secondAttribute="bottom" constant="8" id="RcS-3J-N9A"/>
+                            <constraint firstItem="kBl-1R-06D" firstAttribute="top" secondItem="6Fk-EV-ydc" secondAttribute="bottom" constant="8" id="bQE-0u-cHv"/>
+                            <constraint firstItem="6Fk-EV-ydc" firstAttribute="leading" secondItem="vjD-si-N5h" secondAttribute="leadingMargin" id="kri-vO-PgW"/>
+                            <constraint firstItem="kBl-1R-06D" firstAttribute="leading" secondItem="vjD-si-N5h" secondAttribute="leadingMargin" id="wvE-en-edU"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Escuela de Prevención de la Violencia" id="CaE-c6-oKa"/>
+                    <connections>
+                        <outlet property="banner" destination="6Fk-EV-ydc" id="UT8-R4-t9f"/>
+                        <outlet property="texto" destination="kBl-1R-06D" id="4gW-SM-rE2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ns3-2G-7BE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2334" y="602"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Fvf-ei-rMw">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="IYH-RG-EqD" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="qKe-j6-9uk">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Pmo-jm-oq2"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fQA-YD-hj0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="771" y="1262"/>
         </scene>
     </scenes>
 </document>

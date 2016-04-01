@@ -29,7 +29,7 @@
                                 <rect key="frame" x="256" y="323" width="88" height="30"/>
                                 <state key="normal" title="Director EPV"/>
                                 <connections>
-                                    <segue destination="ntY-Ud-oba" kind="show" id="GNR-lq-ejK"/>
+                                    <segue destination="397-vw-ofg" kind="show" id="JUZ-to-yTn"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wl0-p5-0W9">
@@ -55,57 +55,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1583" y="602"/>
-        </scene>
-        <!--Director EPV-->
-        <scene sceneID="3kl-bb-Nqp">
-            <objects>
-                <viewController id="ntY-Ud-oba" customClass="DirectorVC" customModule="OTP" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="3QC-UA-sGL"/>
-                        <viewControllerLayoutGuide type="bottom" id="t45-OD-jMM"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="S08-JA-cG9">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="KZH-nD-QZw">
-                                <rect key="frame" x="20" y="72" width="560" height="150"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="150" id="d33-Tq-vlm"/>
-                                </constraints>
-                            </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="3r1-Yv-d39">
-                                <rect key="frame" x="20" y="230" width="560" height="350"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="3r1-Yv-d39" firstAttribute="leading" secondItem="S08-JA-cG9" secondAttribute="leadingMargin" id="0cN-HN-Dvo"/>
-                            <constraint firstItem="t45-OD-jMM" firstAttribute="top" secondItem="3r1-Yv-d39" secondAttribute="bottom" constant="20" id="DnG-T4-tlv"/>
-                            <constraint firstItem="KZH-nD-QZw" firstAttribute="leading" secondItem="S08-JA-cG9" secondAttribute="leadingMargin" id="Do2-nL-Fpl"/>
-                            <constraint firstItem="3r1-Yv-d39" firstAttribute="top" secondItem="KZH-nD-QZw" secondAttribute="bottom" constant="8" id="JTI-3T-EXW"/>
-                            <constraint firstItem="3r1-Yv-d39" firstAttribute="top" secondItem="KZH-nD-QZw" secondAttribute="bottom" constant="8" id="Kbv-Zl-gVx"/>
-                            <constraint firstItem="3r1-Yv-d39" firstAttribute="top" secondItem="KZH-nD-QZw" secondAttribute="bottom" constant="8" id="Sfu-n0-kR2"/>
-                            <constraint firstItem="3r1-Yv-d39" firstAttribute="top" secondItem="KZH-nD-QZw" secondAttribute="bottom" constant="8" id="fIC-mZ-osE"/>
-                            <constraint firstItem="KZH-nD-QZw" firstAttribute="top" secondItem="3QC-UA-sGL" secondAttribute="bottom" constant="8" id="i3t-hu-MJZ"/>
-                            <constraint firstItem="3r1-Yv-d39" firstAttribute="trailing" secondItem="S08-JA-cG9" secondAttribute="trailingMargin" id="mXz-BS-MiU"/>
-                            <constraint firstItem="KZH-nD-QZw" firstAttribute="trailing" secondItem="S08-JA-cG9" secondAttribute="trailingMargin" id="rz6-Pa-ySS"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" title="Director EPV" id="t0B-ub-ho4"/>
-                    <connections>
-                        <outlet property="banner" destination="KZH-nD-QZw" id="S9P-YH-zs6"/>
-                        <outlet property="imagen" destination="KZH-nD-QZw" id="6CO-4i-5xv"/>
-                        <outlet property="texto" destination="3r1-Yv-d39" id="q4m-2o-lf6"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="SEa-EN-PSs" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2334" y="1389"/>
         </scene>
         <!--Técnicas de Operativa Táctica Policial-->
         <scene sceneID="mZg-ae-F6C">
@@ -136,7 +85,7 @@
             </objects>
             <point key="canvasLocation" x="2334" y="-120"/>
         </scene>
-        <!--Escuela de Prevención de la Violencia-->
+        <!--EPV-->
         <scene sceneID="SGj-dn-cgs">
             <objects>
                 <viewController id="Q5b-9F-ylf" customClass="EscuelaVC" customModule="OTP" customModuleProvider="target" sceneMemberID="viewController">
@@ -174,7 +123,7 @@
                             <constraint firstItem="kBl-1R-06D" firstAttribute="leading" secondItem="vjD-si-N5h" secondAttribute="leadingMargin" id="wvE-en-edU"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Escuela de Prevención de la Violencia" id="CaE-c6-oKa"/>
+                    <navigationItem key="navigationItem" title="EPV" id="CaE-c6-oKa"/>
                     <connections>
                         <outlet property="banner" destination="6Fk-EV-ydc" id="UT8-R4-t9f"/>
                         <outlet property="texto" destination="kBl-1R-06D" id="4gW-SM-rE2"/>
@@ -183,6 +132,50 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ns3-2G-7BE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2334" y="602"/>
+        </scene>
+        <!--Director EPV-->
+        <scene sceneID="HhM-Ex-tjc">
+            <objects>
+                <viewController id="397-vw-ofg" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="77c-cj-JQc"/>
+                        <viewControllerLayoutGuide type="bottom" id="rkT-gC-4rt"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="5ih-PW-gQy">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vxV-yX-lzv">
+                                <rect key="frame" x="20" y="72" width="560" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="HAa-2b-SpE"/>
+                                </constraints>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="8o8-f3-iIT">
+                                <rect key="frame" x="20" y="230" width="560" height="350"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="vxV-yX-lzv" firstAttribute="leading" secondItem="5ih-PW-gQy" secondAttribute="leadingMargin" id="4qi-QZ-OTl"/>
+                            <constraint firstItem="rkT-gC-4rt" firstAttribute="top" secondItem="8o8-f3-iIT" secondAttribute="bottom" constant="20" id="GkO-fg-J7s"/>
+                            <constraint firstItem="8o8-f3-iIT" firstAttribute="top" secondItem="vxV-yX-lzv" secondAttribute="bottom" constant="8" id="IcX-jV-CvV"/>
+                            <constraint firstItem="vxV-yX-lzv" firstAttribute="trailing" secondItem="5ih-PW-gQy" secondAttribute="trailingMargin" id="pVV-sN-e3A"/>
+                            <constraint firstItem="8o8-f3-iIT" firstAttribute="trailing" secondItem="5ih-PW-gQy" secondAttribute="trailingMargin" id="qwa-ks-4lx"/>
+                            <constraint firstItem="8o8-f3-iIT" firstAttribute="leading" secondItem="5ih-PW-gQy" secondAttribute="leadingMargin" id="vtA-il-BaJ"/>
+                            <constraint firstItem="vxV-yX-lzv" firstAttribute="top" secondItem="77c-cj-JQc" secondAttribute="bottom" constant="8" id="yME-Hu-VeP"/>
+                            <constraint firstItem="8o8-f3-iIT" firstAttribute="top" secondItem="vxV-yX-lzv" secondAttribute="bottom" constant="8" id="yWd-yh-7xP"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Director EPV" id="Tq1-Un-DOE"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UF7-GN-H3o" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2334" y="1391"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Fvf-ei-rMw">

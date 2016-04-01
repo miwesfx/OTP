@@ -16,7 +16,6 @@
 		B92DDEFB1CAE77BE00D2C34C /* OTPUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B92DDEFA1CAE77BE00D2C34C /* OTPUITests.swift */; };
 		B92DDF0D1CAE800C00D2C34C /* InicioVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B92DDF0C1CAE800C00D2C34C /* InicioVC.swift */; };
 		B92DDF0F1CAE80C100D2C34C /* EscuelaVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B92DDF0E1CAE80C100D2C34C /* EscuelaVC.swift */; };
-		B92DDF111CAE830B00D2C34C /* DirectorVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B92DDF101CAE830B00D2C34C /* DirectorVC.swift */; };
 		B92DDF1B1CAE97D000D2C34C /* TecnicasVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B92DDF1A1CAE97D000D2C34C /* TecnicasVC.swift */; };
 /* End PBXBuildFile section */
 
@@ -53,7 +52,6 @@
 		B92DDEFC1CAE77BE00D2C34C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B92DDF0C1CAE800C00D2C34C /* InicioVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InicioVC.swift; sourceTree = "<group>"; };
 		B92DDF0E1CAE80C100D2C34C /* EscuelaVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EscuelaVC.swift; sourceTree = "<group>"; };
-		B92DDF101CAE830B00D2C34C /* DirectorVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DirectorVC.swift; sourceTree = "<group>"; };
 		B92DDF1A1CAE97D000D2C34C /* TecnicasVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TecnicasVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -109,7 +107,6 @@
 				B92DDEDC1CAE77BE00D2C34C /* ViewController.swift */,
 				B92DDEDE1CAE77BE00D2C34C /* Main.storyboard */,
 				B92DDF1A1CAE97D000D2C34C /* TecnicasVC.swift */,
-				B92DDF101CAE830B00D2C34C /* DirectorVC.swift */,
 				B92DDF0E1CAE80C100D2C34C /* EscuelaVC.swift */,
 				B92DDEE11CAE77BE00D2C34C /* Assets.xcassets */,
 				B92DDEE31CAE77BE00D2C34C /* LaunchScreen.storyboard */,
@@ -270,7 +267,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				B92DDF0D1CAE800C00D2C34C /* InicioVC.swift in Sources */,
-				B92DDF111CAE830B00D2C34C /* DirectorVC.swift in Sources */,
 				B92DDF1B1CAE97D000D2C34C /* TecnicasVC.swift in Sources */,
 				B92DDF0F1CAE80C100D2C34C /* EscuelaVC.swift in Sources */,
 				B92DDEDD1CAE77BE00D2C34C /* ViewController.swift in Sources */,

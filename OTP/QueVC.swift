@@ -1,17 +1,14 @@
 //
-//  EscuelaVC.swift
+//  QueVC.swift
 //  OTP
 //
-//  Created by Miwe sfx on 1/4/16.
+//  Created by Miguel on 2/4/16.
 //  Copyright © 2016 Miguel Pérez Prado. All rights reserved.
 //
 
 import UIKit
 
-class EscuelaVC: UIViewController {
-    
-    @IBOutlet weak var banner: UIImageView!
-    @IBOutlet weak var texto: UITextView!
+class QueVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,4 +22,3 @@ class EscuelaVC: UIViewController {
     
     
 }
-

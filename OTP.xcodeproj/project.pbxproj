@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		498B84121CAF2F3900EE4DE5 /* OTP_VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498B84111CAF2F3900EE4DE5 /* OTP_VC.swift */; };
+		498B84141CAF30F800EE4DE5 /* MasterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498B84131CAF30F800EE4DE5 /* MasterVC.swift */; };
+		498B84171CAF329700EE4DE5 /* QueVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498B84161CAF329700EE4DE5 /* QueVC.swift */; };
+		498B84191CAF335500EE4DE5 /* DondeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498B84181CAF335500EE4DE5 /* DondeVC.swift */; };
+		498B841B1CAF350000EE4DE5 /* ObjetivosVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498B841A1CAF350000EE4DE5 /* ObjetivosVC.swift */; };
 		B92DDEDB1CAE77BE00D2C34C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B92DDEDA1CAE77BE00D2C34C /* AppDelegate.swift */; };
 		B92DDEDD1CAE77BE00D2C34C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B92DDEDC1CAE77BE00D2C34C /* ViewController.swift */; };
 		B92DDEE01CAE77BE00D2C34C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B92DDEDE1CAE77BE00D2C34C /* Main.storyboard */; };
@@ -15,8 +20,6 @@
 		B92DDEF01CAE77BE00D2C34C /* OTPTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B92DDEEF1CAE77BE00D2C34C /* OTPTests.swift */; };
 		B92DDEFB1CAE77BE00D2C34C /* OTPUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B92DDEFA1CAE77BE00D2C34C /* OTPUITests.swift */; };
 		B92DDF0D1CAE800C00D2C34C /* InicioVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B92DDF0C1CAE800C00D2C34C /* InicioVC.swift */; };
-		B92DDF0F1CAE80C100D2C34C /* EscuelaVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B92DDF0E1CAE80C100D2C34C /* EscuelaVC.swift */; };
-		B92DDF1B1CAE97D000D2C34C /* TecnicasVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B92DDF1A1CAE97D000D2C34C /* TecnicasVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +40,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		498B84111CAF2F3900EE4DE5 /* OTP_VC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OTP_VC.swift; sourceTree = "<group>"; };
+		498B84131CAF30F800EE4DE5 /* MasterVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterVC.swift; sourceTree = "<group>"; };
+		498B84161CAF329700EE4DE5 /* QueVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QueVC.swift; sourceTree = "<group>"; };
+		498B84181CAF335500EE4DE5 /* DondeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DondeVC.swift; sourceTree = "<group>"; };
+		498B841A1CAF350000EE4DE5 /* ObjetivosVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObjetivosVC.swift; sourceTree = "<group>"; };
 		B92DDED71CAE77BE00D2C34C /* OTP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OTP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B92DDEDA1CAE77BE00D2C34C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B92DDEDC1CAE77BE00D2C34C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -51,8 +59,6 @@
 		B92DDEFA1CAE77BE00D2C34C /* OTPUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPUITests.swift; sourceTree = "<group>"; };
 		B92DDEFC1CAE77BE00D2C34C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B92DDF0C1CAE800C00D2C34C /* InicioVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InicioVC.swift; sourceTree = "<group>"; };
-		B92DDF0E1CAE80C100D2C34C /* EscuelaVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EscuelaVC.swift; sourceTree = "<group>"; };
-		B92DDF1A1CAE97D000D2C34C /* TecnicasVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TecnicasVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +86,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		498B84151CAF320300EE4DE5 /* SupportFiles */ = {
+			isa = PBXGroup;
+			children = (
+				B92DDF0C1CAE800C00D2C34C /* InicioVC.swift */,
+				498B84161CAF329700EE4DE5 /* QueVC.swift */,
+				498B84131CAF30F800EE4DE5 /* MasterVC.swift */,
+				498B84181CAF335500EE4DE5 /* DondeVC.swift */,
+				498B84111CAF2F3900EE4DE5 /* OTP_VC.swift */,
+				498B841A1CAF350000EE4DE5 /* ObjetivosVC.swift */,
+			);
+			name = SupportFiles;
+			sourceTree = "<group>";
+		};
 		B92DDECE1CAE77BE00D2C34C = {
 			isa = PBXGroup;
 			children = (
@@ -103,15 +122,13 @@
 		B92DDED91CAE77BE00D2C34C /* OTP */ = {
 			isa = PBXGroup;
 			children = (
+				498B84151CAF320300EE4DE5 /* SupportFiles */,
 				B92DDEDA1CAE77BE00D2C34C /* AppDelegate.swift */,
 				B92DDEDC1CAE77BE00D2C34C /* ViewController.swift */,
 				B92DDEDE1CAE77BE00D2C34C /* Main.storyboard */,
-				B92DDF1A1CAE97D000D2C34C /* TecnicasVC.swift */,
-				B92DDF0E1CAE80C100D2C34C /* EscuelaVC.swift */,
 				B92DDEE11CAE77BE00D2C34C /* Assets.xcassets */,
 				B92DDEE31CAE77BE00D2C34C /* LaunchScreen.storyboard */,
 				B92DDEE61CAE77BE00D2C34C /* Info.plist */,
-				B92DDF0C1CAE800C00D2C34C /* InicioVC.swift */,
 			);
 			path = OTP;
 			sourceTree = "<group>";
@@ -266,10 +283,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				498B84171CAF329700EE4DE5 /* QueVC.swift in Sources */,
 				B92DDF0D1CAE800C00D2C34C /* InicioVC.swift in Sources */,
-				B92DDF1B1CAE97D000D2C34C /* TecnicasVC.swift in Sources */,
-				B92DDF0F1CAE80C100D2C34C /* EscuelaVC.swift in Sources */,
+				498B841B1CAF350000EE4DE5 /* ObjetivosVC.swift in Sources */,
+				498B84141CAF30F800EE4DE5 /* MasterVC.swift in Sources */,
 				B92DDEDD1CAE77BE00D2C34C /* ViewController.swift in Sources */,
+				498B84121CAF2F3900EE4DE5 /* OTP_VC.swift in Sources */,
+				498B84191CAF335500EE4DE5 /* DondeVC.swift in Sources */,
 				B92DDEDB1CAE77BE00D2C34C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -503,6 +523,7 @@
 				B92DDF011CAE77BE00D2C34C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B92DDF021CAE77BE00D2C34C /* Build configuration list for PBXNativeTarget "OTPTests" */ = {
 			isa = XCConfigurationList;
@@ -511,6 +532,7 @@
 				B92DDF041CAE77BE00D2C34C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B92DDF051CAE77BE00D2C34C /* Build configuration list for PBXNativeTarget "OTPUITests" */ = {
 			isa = XCConfigurationList;
@@ -519,6 +541,7 @@
 				B92DDF071CAE77BE00D2C34C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

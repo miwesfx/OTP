@@ -56,6 +56,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RPE-Xy-4cL">
                                 <rect key="frame" x="533" y="550" width="47" height="30"/>
                                 <state key="normal" title="Correo"/>
+                                <connections>
+                                    <segue destination="IDW-8K-94a" kind="show" id="OVd-MU-mJ2"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -128,7 +131,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ns3-2G-7BE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2346" y="-792"/>
+            <point key="canvasLocation" x="2541" y="-1548"/>
         </scene>
         <!--¿Qué es OTP?-->
         <scene sceneID="bJ0-HW-bCr">
@@ -175,7 +178,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hkp-6I-gnN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3307" y="-2169"/>
+            <point key="canvasLocation" x="3502" y="-2925"/>
         </scene>
         <!--¿Dónde inicia?-->
         <scene sceneID="82n-Sx-a9S">
@@ -222,7 +225,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pIg-SJ-D5X" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3307" y="-1477"/>
+            <point key="canvasLocation" x="3502" y="-2233"/>
         </scene>
         <!--Objetivos-->
         <scene sceneID="wzK-fC-pCX">
@@ -269,7 +272,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eDJ-DV-zbT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3307" y="-792"/>
+            <point key="canvasLocation" x="3502" y="-1548"/>
         </scene>
         <!--Máster J.C. Vera-->
         <scene sceneID="FsO-VY-KXG">
@@ -282,13 +285,30 @@
                     <view key="view" contentMode="scaleToFill" id="EUU-4t-We8">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="justified" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JLS-nH-iIT">
+                                <rect key="frame" x="20" y="72" width="560" height="508"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="JLS-nH-iIT" firstAttribute="trailing" secondItem="EUU-4t-We8" secondAttribute="trailingMargin" id="1A8-rb-kXs"/>
+                            <constraint firstItem="b01-ch-fEM" firstAttribute="top" secondItem="JLS-nH-iIT" secondAttribute="bottom" constant="20" id="LAq-co-0Fl"/>
+                            <constraint firstItem="JLS-nH-iIT" firstAttribute="leading" secondItem="EUU-4t-We8" secondAttribute="leadingMargin" id="aQO-3F-znW"/>
+                            <constraint firstItem="JLS-nH-iIT" firstAttribute="top" secondItem="aB2-D1-jjr" secondAttribute="bottom" constant="8" id="sVP-6o-wQP"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Máster J.C. Vera" id="AXi-eZ-IE3"/>
+                    <connections>
+                        <outlet property="texto" destination="JLS-nH-iIT" id="fS4-SZ-QBc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uss-r5-jRR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2346" y="-86"/>
+            <point key="canvasLocation" x="2541" y="-842"/>
         </scene>
         <!--Procedimientos defensivos-->
         <scene sceneID="SWI-wv-5ZM">
@@ -317,7 +337,78 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZXx-sI-bF5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2346" y="602"/>
+            <point key="canvasLocation" x="2541" y="-154"/>
+        </scene>
+        <!--Correo-->
+        <scene sceneID="QY1-Ie-dBw">
+            <objects>
+                <viewController id="IDW-8K-94a" customClass="CorreoVC" customModule="OTP" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8Ad-jI-tKo"/>
+                        <viewControllerLayoutGuide type="bottom" id="SwV-sD-kRS"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="2Tr-uO-ebx">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nombre:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b3p-cu-kRK">
+                                <rect key="frame" x="20" y="72" width="67" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Consulta:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9B2-U3-jmv">
+                                <rect key="frame" x="20" y="139" width="73" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vl1-lr-d6c">
+                                <rect key="frame" x="20" y="101" width="560" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Escriba aquí su consulta." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="gcE-wV-BFo">
+                                <rect key="frame" x="20" y="168" width="560" height="374"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p7x-Hn-l8L">
+                                <rect key="frame" x="279" y="550" width="42" height="30"/>
+                                <state key="normal" title="Enviar"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="vl1-lr-d6c" firstAttribute="top" secondItem="b3p-cu-kRK" secondAttribute="bottom" constant="8" id="0OZ-Ec-iUu"/>
+                            <constraint firstItem="p7x-Hn-l8L" firstAttribute="top" secondItem="gcE-wV-BFo" secondAttribute="bottom" constant="8" id="1Hn-qn-C2X"/>
+                            <constraint firstItem="gcE-wV-BFo" firstAttribute="trailing" secondItem="2Tr-uO-ebx" secondAttribute="trailingMargin" id="2Gl-Cf-Xtk"/>
+                            <constraint firstItem="p7x-Hn-l8L" firstAttribute="centerX" secondItem="2Tr-uO-ebx" secondAttribute="centerX" id="4My-wL-YEv"/>
+                            <constraint firstItem="9B2-U3-jmv" firstAttribute="top" secondItem="vl1-lr-d6c" secondAttribute="bottom" constant="8" id="6Yo-8v-vHc"/>
+                            <constraint firstItem="gcE-wV-BFo" firstAttribute="leading" secondItem="2Tr-uO-ebx" secondAttribute="leadingMargin" id="ED2-BQ-IGy"/>
+                            <constraint firstItem="b3p-cu-kRK" firstAttribute="top" secondItem="8Ad-jI-tKo" secondAttribute="bottom" constant="8" id="Ejf-Sz-bnq"/>
+                            <constraint firstItem="vl1-lr-d6c" firstAttribute="leading" secondItem="2Tr-uO-ebx" secondAttribute="leadingMargin" id="FAx-Z2-gw7"/>
+                            <constraint firstItem="vl1-lr-d6c" firstAttribute="top" secondItem="b3p-cu-kRK" secondAttribute="bottom" constant="8" id="Glv-9i-Fz2"/>
+                            <constraint firstItem="SwV-sD-kRS" firstAttribute="top" secondItem="p7x-Hn-l8L" secondAttribute="bottom" constant="20" id="IQo-rI-YBF"/>
+                            <constraint firstItem="gcE-wV-BFo" firstAttribute="top" secondItem="9B2-U3-jmv" secondAttribute="bottom" constant="8" id="RGi-NH-r08"/>
+                            <constraint firstItem="p7x-Hn-l8L" firstAttribute="top" secondItem="gcE-wV-BFo" secondAttribute="bottom" constant="8" id="WlN-TD-mBG"/>
+                            <constraint firstItem="gcE-wV-BFo" firstAttribute="top" secondItem="9B2-U3-jmv" secondAttribute="bottom" constant="8" id="aOm-wV-era"/>
+                            <constraint firstItem="b3p-cu-kRK" firstAttribute="leading" secondItem="2Tr-uO-ebx" secondAttribute="leadingMargin" id="f2L-qA-gar"/>
+                            <constraint firstItem="vl1-lr-d6c" firstAttribute="trailing" secondItem="2Tr-uO-ebx" secondAttribute="trailingMargin" id="pA1-Xi-j7Y"/>
+                            <constraint firstItem="9B2-U3-jmv" firstAttribute="top" secondItem="vl1-lr-d6c" secondAttribute="bottom" constant="8" id="suN-js-1ep"/>
+                            <constraint firstItem="9B2-U3-jmv" firstAttribute="leading" secondItem="2Tr-uO-ebx" secondAttribute="leadingMargin" id="toc-xw-60J"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Correo" id="Lop-fS-X2Y"/>
+                    <connections>
+                        <outlet property="Consulta" destination="gcE-wV-BFo" id="u0f-VP-cDy"/>
+                        <outlet property="remitente" destination="vl1-lr-d6c" id="hda-0i-cXZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RpU-ic-ioo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1575" y="1348"/>
         </scene>
         <!--Ante agarres-->
         <scene sceneID="jkc-jm-bPu">
@@ -346,7 +437,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="u2K-u7-bg0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2346" y="2110"/>
+            <point key="canvasLocation" x="2541" y="1354"/>
         </scene>
         <!--Inmovilizaciones básicas-->
         <scene sceneID="LsP-rs-yTP">
@@ -375,7 +466,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gUX-cx-Tls" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2346" y="1365"/>
+            <point key="canvasLocation" x="2541" y="609"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Fvf-ei-rMw">

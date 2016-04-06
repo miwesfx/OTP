@@ -20,6 +20,7 @@
 		B92DDEF01CAE77BE00D2C34C /* OTPTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B92DDEEF1CAE77BE00D2C34C /* OTPTests.swift */; };
 		B92DDEFB1CAE77BE00D2C34C /* OTPUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B92DDEFA1CAE77BE00D2C34C /* OTPUITests.swift */; };
 		B92DDF0D1CAE800C00D2C34C /* InicioVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B92DDF0C1CAE800C00D2C34C /* InicioVC.swift */; };
+		B9BFC0C01CB4F4F300FDA2FA /* CorreoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9BFC0BF1CB4F4F300FDA2FA /* CorreoVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		B92DDEFA1CAE77BE00D2C34C /* OTPUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPUITests.swift; sourceTree = "<group>"; };
 		B92DDEFC1CAE77BE00D2C34C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B92DDF0C1CAE800C00D2C34C /* InicioVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InicioVC.swift; sourceTree = "<group>"; };
+		B9BFC0BF1CB4F4F300FDA2FA /* CorreoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CorreoVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 		498B84151CAF320300EE4DE5 /* SupportFiles */ = {
 			isa = PBXGroup;
 			children = (
+				B9BFC0BF1CB4F4F300FDA2FA /* CorreoVC.swift */,
 				B92DDF0C1CAE800C00D2C34C /* InicioVC.swift */,
 				498B84161CAF329700EE4DE5 /* QueVC.swift */,
 				498B84131CAF30F800EE4DE5 /* MasterVC.swift */,
@@ -283,6 +286,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B9BFC0C01CB4F4F300FDA2FA /* CorreoVC.swift in Sources */,
 				498B84171CAF329700EE4DE5 /* QueVC.swift in Sources */,
 				B92DDF0D1CAE800C00D2C34C /* InicioVC.swift in Sources */,
 				498B841B1CAF350000EE4DE5 /* ObjetivosVC.swift in Sources */,

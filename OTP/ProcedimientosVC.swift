@@ -11,14 +11,15 @@ import UIKit
 class ProcedimientosVC: UITableViewController{
     
     var NombresArray = [String]()
-    var Frutas = [String]()
+    var EnlacesArray = [String]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        NombresArray = ["uno","dos","tres","cuatro"]
-        Frutas = ["pera", "manzana", "naranja", "melón"]
+        NombresArray = ["Posición de seguridad","Posición de guardia","Distancias","Desplazamientos", "Esquivas parciales ante golpes directos", "Esquivas parciales ante golpes circulares", "Desvíos ante golpes directos", "Bloqueos ante golpes circulares", "Bloqueos ante golpes circulares"]
+        
+        EnlacesArray = ["http://videos.escuelaprevencionviolencia.es/otp/pseg.mp4", "http://videos.escuelaprevencionviolencia.es/otp/pgua.mp4", "http://videos.escuelaprevencionviolencia.es/otp/distan.mp4", "http://videos.escuelaprevencionviolencia.es/otp/desplaz.mp4", "http://videos.escuelaprevencionviolencia.es/otp/es-par-direc.mp4", "http://videos.escuelaprevencionviolencia.es/otp/es-par-cir.mp4", "http://videos.escuelaprevencionviolencia.es/otp/desvi-direc.mp4", "http://videos.escuelaprevencionviolencia.es/otp/bloq-cir.mp4", "http://videos.escuelaprevencionviolencia.es/otp/bloq-asc.mp4"]
     }
     
     override func didReceiveMemoryWarning() {
@@ -45,7 +46,7 @@ class ProcedimientosVC: UITableViewController{
         
         let DestViewController = segue.destinationViewController as! VideosProcedimientosVC
         
-        DestViewController.cadena = Frutas[indexPath.row]
+        DestViewController.cadena = EnlacesArray[indexPath.row]
         
         
     }

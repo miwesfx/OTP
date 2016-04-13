@@ -297,23 +297,38 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="justified" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JLS-nH-iIT">
-                                <rect key="frame" x="20" y="72" width="560" height="508"/>
+                                <rect key="frame" x="20" y="330" width="560" height="250"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JO5-do-rch">
+                                <rect key="frame" x="20" y="72" width="560" height="250"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                            </webView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="JLS-nH-iIT" firstAttribute="height" secondItem="JO5-do-rch" secondAttribute="height" id="17D-vq-Hm4"/>
                             <constraint firstItem="JLS-nH-iIT" firstAttribute="trailing" secondItem="EUU-4t-We8" secondAttribute="trailingMargin" id="1A8-rb-kXs"/>
+                            <constraint firstItem="JLS-nH-iIT" firstAttribute="top" secondItem="JO5-do-rch" secondAttribute="bottom" constant="8" id="66U-Zs-97n"/>
+                            <constraint firstItem="JO5-do-rch" firstAttribute="trailing" secondItem="EUU-4t-We8" secondAttribute="trailingMargin" id="8j3-Mk-pBU"/>
                             <constraint firstItem="b01-ch-fEM" firstAttribute="top" secondItem="JLS-nH-iIT" secondAttribute="bottom" constant="20" id="LAq-co-0Fl"/>
+                            <constraint firstItem="JO5-do-rch" firstAttribute="leading" secondItem="EUU-4t-We8" secondAttribute="leadingMargin" id="Wjc-yi-1A4"/>
                             <constraint firstItem="JLS-nH-iIT" firstAttribute="leading" secondItem="EUU-4t-We8" secondAttribute="leadingMargin" id="aQO-3F-znW"/>
+                            <constraint firstItem="JO5-do-rch" firstAttribute="top" secondItem="aB2-D1-jjr" secondAttribute="bottom" constant="8" id="kXB-9k-hwv"/>
                             <constraint firstItem="JLS-nH-iIT" firstAttribute="top" secondItem="aB2-D1-jjr" secondAttribute="bottom" constant="8" id="sVP-6o-wQP"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="sVP-6o-wQP"/>
+                            </mask>
+                        </variation>
                     </view>
                     <navigationItem key="navigationItem" title="Máster J.C. Vera" id="AXi-eZ-IE3"/>
                     <connections>
                         <outlet property="texto" destination="JLS-nH-iIT" id="fS4-SZ-QBc"/>
+                        <outlet property="videoView" destination="JO5-do-rch" id="WTo-A8-JZg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uss-r5-jRR" userLabel="First Responder" sceneMemberID="firstResponder"/>

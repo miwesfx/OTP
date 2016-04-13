@@ -24,6 +24,10 @@ class CorreoVC: UIViewController, MFMailComposeViewControllerDelegate {
         consulta.layer.cornerRadius = 7.0
     }
     
+    override func viewDidAppear(animated: Bool) {
+        consulta.text = "[Escriba su consulta aquí]"
+    }
+    
     func DismissKeyboard()
     {
         self.view.endEditing(true)

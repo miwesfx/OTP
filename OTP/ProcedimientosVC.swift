@@ -7,8 +7,11 @@
 //
 
 import UIKit
+import AVKit
+import AVFoundation
 
 class ProcedimientosVC: UITableViewController{
+    
     
     var NombresArray = [String]()
     var EnlacesArray = [String]()
@@ -43,11 +46,11 @@ class ProcedimientosVC: UITableViewController{
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         
         let indexPath : NSIndexPath = self.tableView.indexPathForSelectedRow!
+        let direccion = NSURL(string: EnlacesArray[indexPath.row])!
         
-        let DestViewController = segue.destinationViewController as! VideosProcedimientosVC
+        let DestViewController = segue.destinationViewController as! AVPlayerViewController
         
-        DestViewController.cadena = EnlacesArray[indexPath.row]
-        
-        
+        DestViewController.player = AVPlayer(URL: direccion)
+        DestViewController.player?.play()
     }
 }

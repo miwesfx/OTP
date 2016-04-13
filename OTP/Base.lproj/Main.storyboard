@@ -329,24 +329,15 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" textLabel="Jh2-X6-amH" style="IBUITableViewCellStyleDefault" id="9LA-ak-Sue">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="9LA-ak-Sue">
                                 <rect key="frame" x="0.0" y="92" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="9LA-ak-Sue" id="x3S-xv-kVF">
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Jh2-X6-amH">
-                                            <rect key="frame" x="15" y="0.0" width="570" height="43"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                    </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="RM0-zX-ecZ" kind="show" id="rf0-74-2jB"/>
+                                    <segue destination="6os-Yl-sV7" kind="showDetail" id="UUt-ue-DdT"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -363,38 +354,13 @@
             </objects>
             <point key="canvasLocation" x="2541" y="-154"/>
         </scene>
-        <!--Videos ProcedimientosVC-->
-        <scene sceneID="PHc-SI-kI3">
+        <!--AV Player View Controller-->
+        <scene sceneID="E2Q-65-Iqk">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="cEd-Sx-ya8" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <viewController id="RM0-zX-ecZ" customClass="VideosProcedimientosVC" customModule="OTP" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="KzX-rS-cwT"/>
-                        <viewControllerLayoutGuide type="bottom" id="pMA-aG-QBE"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="wnE-VU-XRm">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZFb-em-Zms">
-                                <rect key="frame" x="20" y="72" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="ZFb-em-Zms" firstAttribute="top" secondItem="KzX-rS-cwT" secondAttribute="bottom" constant="8" id="SAm-3Y-moj"/>
-                            <constraint firstItem="ZFb-em-Zms" firstAttribute="leading" secondItem="wnE-VU-XRm" secondAttribute="leadingMargin" id="bdF-5M-utM"/>
-                        </constraints>
-                    </view>
-                    <connections>
-                        <outlet property="etiqueta" destination="ZFb-em-Zms" id="z8A-Dn-1sw"/>
-                    </connections>
-                </viewController>
+                <avPlayerViewController videoGravity="AVLayerVideoGravityResizeAspect" id="6os-Yl-sV7" customClass="VideosVC" customModule="OTP" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GwL-Kx-9pI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3549" y="602"/>
+            <point key="canvasLocation" x="3308" y="609"/>
         </scene>
         <!--CorreoVC-->
         <scene sceneID="UFM-1y-lZF">
@@ -428,7 +394,6 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="VYY-B4-etf">
                                 <rect key="frame" x="20" y="168" width="560" height="374"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -487,7 +452,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="RM0-zX-ecZ" kind="show" id="8Dt-af-kVU"/>
+                                    <segue destination="6os-Yl-sV7" kind="showDetail" id="Hpm-TY-deC"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -519,7 +484,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="RM0-zX-ecZ" kind="show" id="fLD-Q0-Vad"/>
+                                    <segue destination="6os-Yl-sV7" kind="showDetail" id="Lp3-8Z-vDQ"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -554,6 +519,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="8Dt-af-kVU"/>
+        <segue reference="Hpm-TY-deC"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -18,13 +18,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2pb-R3-hTQ">
-                                <rect key="frame" x="285" y="209" width="30" height="30"/>
-                                <state key="normal" title="OTP"/>
-                                <connections>
-                                    <segue destination="Q5b-9F-ylf" kind="show" id="Iro-3J-NfF"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J7Z-HY-vTE">
                                 <rect key="frame" x="244" y="247" width="112" height="30"/>
                                 <state key="normal" title="Máster J.C. Vera"/>
@@ -60,21 +53,36 @@
                                     <segue destination="G93-XN-2w1" kind="show" id="Euc-Ic-gsZ"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xdI-5q-g2n">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="scenarios" translatesAutoresizingMaskIntoConstraints="NO" id="xdI-5q-g2n">
                                 <rect key="frame" x="208" y="550" width="185" height="50"/>
-                                <color key="backgroundColor" red="0.44252108070000001" green="0.54267479320000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="185" id="PGy-Qq-ccc"/>
                                     <constraint firstAttribute="height" constant="50" id="k7B-qb-XJT"/>
                                 </constraints>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="exh-WD-xMP">
+                                <rect key="frame" x="20" y="550" width="31" height="30"/>
+                                <state key="normal" title="Web"/>
+                                <connections>
+                                    <action selector="webButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="K8V-8w-eCE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2pb-R3-hTQ">
+                                <rect key="frame" x="285" y="209" width="30" height="30"/>
+                                <state key="normal" title="OTP"/>
+                                <connections>
+                                    <segue destination="Q5b-9F-ylf" kind="show" id="Iro-3J-NfF"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="T3S-Qj-ZLf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1He-fd-9cq"/>
+                            <constraint firstItem="exh-WD-xMP" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="35m-M5-b4k"/>
                             <constraint firstItem="RPE-Xy-4cL" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="803-dG-8jr"/>
                             <constraint firstItem="J7Z-HY-vTE" firstAttribute="top" secondItem="2pb-R3-hTQ" secondAttribute="bottom" constant="8" id="Er5-xG-zcf"/>
                             <constraint firstItem="J7Z-HY-vTE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="PjV-85-6RH"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="exh-WD-xMP" secondAttribute="bottom" constant="20" id="SBE-lG-Br4"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="RPE-Xy-4cL" secondAttribute="bottom" constant="20" id="U2U-Kn-ILI"/>
                             <constraint firstItem="Wl0-p5-0W9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="W0M-R9-smD"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="xdI-5q-g2n" secondAttribute="bottom" id="Wyo-cl-KW4"/>
@@ -309,21 +317,16 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="JLS-nH-iIT" firstAttribute="height" secondItem="JO5-do-rch" secondAttribute="height" id="17D-vq-Hm4"/>
-                            <constraint firstItem="JLS-nH-iIT" firstAttribute="trailing" secondItem="EUU-4t-We8" secondAttribute="trailingMargin" id="1A8-rb-kXs"/>
-                            <constraint firstItem="JLS-nH-iIT" firstAttribute="top" secondItem="JO5-do-rch" secondAttribute="bottom" constant="8" id="66U-Zs-97n"/>
-                            <constraint firstItem="JO5-do-rch" firstAttribute="trailing" secondItem="EUU-4t-We8" secondAttribute="trailingMargin" id="8j3-Mk-pBU"/>
-                            <constraint firstItem="b01-ch-fEM" firstAttribute="top" secondItem="JLS-nH-iIT" secondAttribute="bottom" constant="20" id="LAq-co-0Fl"/>
-                            <constraint firstItem="JO5-do-rch" firstAttribute="leading" secondItem="EUU-4t-We8" secondAttribute="leadingMargin" id="Wjc-yi-1A4"/>
-                            <constraint firstItem="JLS-nH-iIT" firstAttribute="leading" secondItem="EUU-4t-We8" secondAttribute="leadingMargin" id="aQO-3F-znW"/>
-                            <constraint firstItem="JO5-do-rch" firstAttribute="top" secondItem="aB2-D1-jjr" secondAttribute="bottom" constant="8" id="kXB-9k-hwv"/>
-                            <constraint firstItem="JLS-nH-iIT" firstAttribute="top" secondItem="aB2-D1-jjr" secondAttribute="bottom" constant="8" id="sVP-6o-wQP"/>
+                            <constraint firstItem="JLS-nH-iIT" firstAttribute="leading" secondItem="EUU-4t-We8" secondAttribute="leadingMargin" id="EZf-Jd-KYf"/>
+                            <constraint firstItem="JO5-do-rch" firstAttribute="leading" secondItem="EUU-4t-We8" secondAttribute="leadingMargin" id="G9Z-Ue-3Jr"/>
+                            <constraint firstItem="JLS-nH-iIT" firstAttribute="top" secondItem="JO5-do-rch" secondAttribute="bottom" constant="8" id="HyS-jt-h9q"/>
+                            <constraint firstItem="b01-ch-fEM" firstAttribute="top" secondItem="JLS-nH-iIT" secondAttribute="bottom" constant="20" id="NDA-VE-jOT"/>
+                            <constraint firstItem="JO5-do-rch" firstAttribute="top" secondItem="aB2-D1-jjr" secondAttribute="bottom" constant="8" id="Svd-Yd-zt8"/>
+                            <constraint firstItem="JO5-do-rch" firstAttribute="trailing" secondItem="EUU-4t-We8" secondAttribute="trailingMargin" id="TWB-Fi-ytd"/>
+                            <constraint firstItem="JLS-nH-iIT" firstAttribute="height" secondItem="JO5-do-rch" secondAttribute="height" id="Tf9-cd-Aax"/>
+                            <constraint firstItem="JLS-nH-iIT" firstAttribute="trailing" secondItem="EUU-4t-We8" secondAttribute="trailingMargin" id="cAy-Gq-jEx"/>
+                            <constraint firstItem="JLS-nH-iIT" firstAttribute="top" secondItem="JO5-do-rch" secondAttribute="bottom" constant="8" id="mBm-l8-vso"/>
                         </constraints>
-                        <variation key="default">
-                            <mask key="constraints">
-                                <exclude reference="sVP-6o-wQP"/>
-                            </mask>
-                        </variation>
                     </view>
                     <navigationItem key="navigationItem" title="Máster J.C. Vera" id="AXi-eZ-IE3"/>
                     <connections>
@@ -339,16 +342,16 @@
         <scene sceneID="SWI-wv-5ZM">
             <objects>
                 <tableViewController id="39G-Hq-3BZ" customClass="ProcedimientosVC" customModule="OTP" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="nLY-mJ-rak">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="80" sectionHeaderHeight="28" sectionFooterHeight="28" id="nLY-mJ-rak">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="9LA-ak-Sue">
-                                <rect key="frame" x="0.0" y="92" width="600" height="44"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="80" id="9LA-ak-Sue">
+                                <rect key="frame" x="0.0" y="92" width="600" height="80"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="9LA-ak-Sue" id="x3S-xv-kVF">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="79"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                                 <connections>
@@ -454,16 +457,16 @@
         <scene sceneID="jkc-jm-bPu">
             <objects>
                 <tableViewController id="QLb-lU-xog" customClass="AgarresVC" customModule="OTP" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="78c-aU-ySE">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="80" sectionHeaderHeight="28" sectionFooterHeight="28" id="78c-aU-ySE">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="I3N-V3-PjO">
-                                <rect key="frame" x="0.0" y="92" width="600" height="44"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="80" id="I3N-V3-PjO">
+                                <rect key="frame" x="0.0" y="92" width="600" height="80"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="I3N-V3-PjO" id="s2T-KD-eUp">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="79"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                                 <connections>
@@ -486,16 +489,16 @@
         <scene sceneID="LsP-rs-yTP">
             <objects>
                 <tableViewController id="zRm-45-daa" customClass="InmovilizacionesVC" customModule="OTP" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="qvh-Ue-IST">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="80" sectionHeaderHeight="28" sectionFooterHeight="28" id="qvh-Ue-IST">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="9vG-84-FTj">
-                                <rect key="frame" x="0.0" y="92" width="600" height="44"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="80" id="9vG-84-FTj">
+                                <rect key="frame" x="0.0" y="92" width="600" height="80"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="9vG-84-FTj" id="GhH-kw-mwL">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="79"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                                 <connections>
@@ -533,7 +536,10 @@
             <point key="canvasLocation" x="773" y="602"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="scenarios" width="366" height="167"/>
+    </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Hpm-TY-deC"/>
+        <segue reference="UUt-ue-DdT"/>
     </inferredMetricsTieBreakers>
 </document>

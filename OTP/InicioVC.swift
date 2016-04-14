@@ -10,6 +10,9 @@ import UIKit
 
 class InicioVC: UIViewController {
     
+    @IBAction func webButton(sender: AnyObject) {
+        UIApplication.sharedApplication().openURL(NSURL(string: "http://operativatacticapolicial.org")!)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.

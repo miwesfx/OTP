@@ -15,14 +15,17 @@ class ProcedimientosVC: UITableViewController{
     
     var NombresArray = [String]()
     var EnlacesArray = [String]()
+    var ImagenesArray = [String]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        NombresArray = ["Posición de seguridad","Posición de guardia","Distancias","Desplazamientos", "Esquivas parciales ante golpes directos", "Esquivas parciales ante golpes circulares", "Desvíos ante golpes directos", "Bloqueos ante golpes circulares", "Bloqueos ante golpes circulares"]
+        NombresArray = ["Posición de seguridad","Posición de guardia","Distancias","Desplazamientos", "Esquivas parciales ante golpes directos", "Esquivas parciales ante golpes circulares", "Desvíos ante golpes directos", "Bloqueos ante golpes circulares", "Bloqueos ante golpes ascendentes"]
         
         EnlacesArray = ["http://videos.escuelaprevencionviolencia.es/otp/pseg.mp4", "http://videos.escuelaprevencionviolencia.es/otp/pgua.mp4", "http://videos.escuelaprevencionviolencia.es/otp/distan.mp4", "http://videos.escuelaprevencionviolencia.es/otp/desplaz.mp4", "http://videos.escuelaprevencionviolencia.es/otp/es-par-direc.mp4", "http://videos.escuelaprevencionviolencia.es/otp/es-par-cir.mp4", "http://videos.escuelaprevencionviolencia.es/otp/desvi-direc.mp4", "http://videos.escuelaprevencionviolencia.es/otp/bloq-cir.mp4", "http://videos.escuelaprevencionviolencia.es/otp/bloq-asc.mp4"]
+        
+        ImagenesArray = ["posicion seguridad","posicion guardia","distancias","desplazamientos","esquiva directo","esquiva circular","desvio directo","bloqueo circular","bloqueo ascendente"]
     }
     
     override func didReceiveMemoryWarning() {
@@ -39,6 +42,7 @@ class ProcedimientosVC: UITableViewController{
         let Cell = self.tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as UITableViewCell
         
         Cell.textLabel?.text = NombresArray[indexPath.row]
+        Cell.imageView?.image = UIImage(named: ImagenesArray[indexPath.row])
         
         return Cell
     }

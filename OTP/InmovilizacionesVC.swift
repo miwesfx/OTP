@@ -19,7 +19,7 @@ class InmovilizacionesVC: UITableViewController{
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        NombresArray = ["Técnica básica 1: Control arriba","Técnica básica 1: Control al suelo","Técnica básica 2","Técnica básica 2: Control arriba", "Esquivas parciales ante golpes directos"]
+        NombresArray = ["Técnica básica 1: Control arriba","Técnica básica 1: Control al suelo","Técnica básica 2","Técnica básica 3: Control arriba", "Técnica básica 4: Esquivas parciales ante golpes directos"]
         
         EnlacesArray = ["http://videos.escuelaprevencionviolencia.es/otp/ba1-arr.mp4", "http://videos.escuelaprevencionviolencia.es/otp/ba1-sue.mp4", "http://videos.escuelaprevencionviolencia.es/otp/ba2.mp4", "http://videos.escuelaprevencionviolencia.es/otp/ba3.mp4", "http://videos.escuelaprevencionviolencia.es/otp/ba4.mp4"]
     }

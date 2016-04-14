@@ -7,11 +7,14 @@
 //
 
 import UIKit
+import AVKit
+import AVFoundation
 
 class AgarresVC: UITableViewController{
     
     var NombresArray = [String]()
     var EnlacesArray = [String]()
+    var ImagenesArray = [String]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,6 +23,8 @@ class AgarresVC: UITableViewController{
         NombresArray = ["Agarre brazo: Control arriba","Agarre brazo: Control al suelo","Agarre cuello: Control al suelo","Agarre de muñeca cruzado", "Agarre de muñeca"]
         
         EnlacesArray = ["http://videos.escuelaprevencionviolencia.es/otp/agarre-bra-arri.mp4", "http://videos.escuelaprevencionviolencia.es/otp/aga-brazo-sue.mp4", "http://videos.escuelaprevencionviolencia.es/otp/aga-cue-aba.mp4", "http://videos.escuelaprevencionviolencia.es/otp/aga-mun-cruza.mp4", "http://videos.escuelaprevencionviolencia.es/otp/aga-mune.mp4"]
+        
+        ImagenesArray = ["agarre brazo","agarre brazo","agarre cuello","agarre cruzado","agarre muneca"]
     }
     
     override func didReceiveMemoryWarning() {
@@ -36,6 +41,7 @@ class AgarresVC: UITableViewController{
         let Cell = self.tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as UITableViewCell
         
         Cell.textLabel?.text = NombresArray[indexPath.row]
+        Cell.imageView?.image = UIImage(named: ImagenesArray[indexPath.row])
         
         return Cell
     }
@@ -43,11 +49,11 @@ class AgarresVC: UITableViewController{
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         
         let indexPath : NSIndexPath = self.tableView.indexPathForSelectedRow!
+        let direccion = NSURL(string: EnlacesArray[indexPath.row])!
         
-        let DestViewController = segue.destinationViewController as! VideosProcedimientosVC
+        let DestViewController = segue.destinationViewController as! AVPlayerViewController
         
-        DestViewController.cadena = EnlacesArray[indexPath.row]
-        
-        
+        DestViewController.player = AVPlayer(URL: direccion)
+        DestViewController.player?.play()
     }
 }

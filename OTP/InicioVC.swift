@@ -10,9 +10,22 @@ import UIKit
 
 class InicioVC: UIViewController {
     
+    @IBOutlet weak var agarresButton: UIButton!
+    @IBOutlet weak var inmovilizacionesButton: UIButton!
+    @IBOutlet weak var procedimientosButton: UIButton!
+    @IBOutlet weak var masterButton: UIButton!
+    @IBOutlet weak var otpButton: UIButton!
+    @IBAction func webButton(sender: AnyObject) {
+        UIApplication.sharedApplication().openURL(NSURL(string: "http://operativatacticapolicial.org")!)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        otpButton.imageView?.contentMode = UIViewContentMode.ScaleAspectFit
+        masterButton.imageView?.contentMode = UIViewContentMode.ScaleAspectFit
+        procedimientosButton.imageView?.contentMode = UIViewContentMode.ScaleAspectFit
+        inmovilizacionesButton.imageView?.contentMode = UIViewContentMode.ScaleAspectFit
+        agarresButton.imageView?.contentMode = UIViewContentMode.ScaleAspectFit
     }
     
     override func didReceiveMemoryWarning() {

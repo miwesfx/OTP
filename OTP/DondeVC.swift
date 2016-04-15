@@ -18,6 +18,7 @@ class DondeVC: UIViewController {
     
     override func viewDidAppear(animated: Bool) {
         texto.text = "Mencionar la cobertura de validez que se la da a  OTP desde  el \"Estudio criminológico sobre prevención de riesgos en la Policía Local de Cádiz, 2003-2011\", documento elaborado  por  José Carlos Vera en base a la formación continua en OTP, que  desde el año 1997 impartido, a toda la Plantilla de la policía local de Cádiz, lo cual ha facilitado la evolución de este sistema de intervención policial, adaptado a las necesidades del policía y a la protección de los ciudadanos/as."
+        texto.textColor = UIColor.whiteColor()
     }
     
     override func didReceiveMemoryWarning() {

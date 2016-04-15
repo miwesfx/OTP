@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		498B84121CAF2F3900EE4DE5 /* OTP_VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498B84111CAF2F3900EE4DE5 /* OTP_VC.swift */; };
 		498B84141CAF30F800EE4DE5 /* MasterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498B84131CAF30F800EE4DE5 /* MasterVC.swift */; };
 		498B84171CAF329700EE4DE5 /* QueVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498B84161CAF329700EE4DE5 /* QueVC.swift */; };
 		498B84191CAF335500EE4DE5 /* DondeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498B84181CAF335500EE4DE5 /* DondeVC.swift */; };
@@ -22,6 +21,7 @@
 		B92DDEFB1CAE77BE00D2C34C /* OTPUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B92DDEFA1CAE77BE00D2C34C /* OTPUITests.swift */; };
 		B92DDF0D1CAE800C00D2C34C /* InicioVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B92DDF0C1CAE800C00D2C34C /* InicioVC.swift */; };
 		B969F45D1CBE75C500A116AE /* VideosVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B969F45C1CBE75C500A116AE /* VideosVC.swift */; };
+		B969F4651CC10B8300A116AE /* OperativaVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B969F4641CC10B8300A116AE /* OperativaVC.swift */; };
 		B9BFC0C21CB51B2A00FDA2FA /* ProcedimientosVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9BFC0C11CB51B2A00FDA2FA /* ProcedimientosVC.swift */; };
 		B9BFC0C41CB51BD800FDA2FA /* InmovilizacionesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9BFC0C31CB51BD800FDA2FA /* InmovilizacionesVC.swift */; };
 		B9BFC0C61CB51C2600FDA2FA /* AgarresVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9BFC0C51CB51C2600FDA2FA /* AgarresVC.swift */; };
@@ -45,7 +45,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		498B84111CAF2F3900EE4DE5 /* OTP_VC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OTP_VC.swift; sourceTree = "<group>"; };
 		498B84131CAF30F800EE4DE5 /* MasterVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterVC.swift; sourceTree = "<group>"; };
 		498B84161CAF329700EE4DE5 /* QueVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QueVC.swift; sourceTree = "<group>"; };
 		498B84181CAF335500EE4DE5 /* DondeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DondeVC.swift; sourceTree = "<group>"; };
@@ -66,6 +65,7 @@
 		B92DDEFC1CAE77BE00D2C34C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B92DDF0C1CAE800C00D2C34C /* InicioVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InicioVC.swift; sourceTree = "<group>"; };
 		B969F45C1CBE75C500A116AE /* VideosVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideosVC.swift; sourceTree = "<group>"; };
+		B969F4641CC10B8300A116AE /* OperativaVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OperativaVC.swift; sourceTree = "<group>"; };
 		B9BFC0C11CB51B2A00FDA2FA /* ProcedimientosVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProcedimientosVC.swift; sourceTree = "<group>"; };
 		B9BFC0C31CB51BD800FDA2FA /* InmovilizacionesVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InmovilizacionesVC.swift; sourceTree = "<group>"; };
 		B9BFC0C51CB51C2600FDA2FA /* AgarresVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AgarresVC.swift; sourceTree = "<group>"; };
@@ -99,6 +99,7 @@
 		498B84151CAF320300EE4DE5 /* SupportFiles */ = {
 			isa = PBXGroup;
 			children = (
+				B969F4641CC10B8300A116AE /* OperativaVC.swift */,
 				B969F45C1CBE75C500A116AE /* VideosVC.swift */,
 				49D737701CB5B5EF00B7DD07 /* CorreoVC.swift */,
 				B9BFC0C51CB51C2600FDA2FA /* AgarresVC.swift */,
@@ -108,7 +109,6 @@
 				498B84161CAF329700EE4DE5 /* QueVC.swift */,
 				498B84131CAF30F800EE4DE5 /* MasterVC.swift */,
 				498B84181CAF335500EE4DE5 /* DondeVC.swift */,
-				498B84111CAF2F3900EE4DE5 /* OTP_VC.swift */,
 				498B841A1CAF350000EE4DE5 /* ObjetivosVC.swift */,
 			);
 			name = SupportFiles;
@@ -298,6 +298,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B969F4651CC10B8300A116AE /* OperativaVC.swift in Sources */,
 				B9BFC0C61CB51C2600FDA2FA /* AgarresVC.swift in Sources */,
 				498B84171CAF329700EE4DE5 /* QueVC.swift in Sources */,
 				B92DDF0D1CAE800C00D2C34C /* InicioVC.swift in Sources */,
@@ -306,7 +307,6 @@
 				498B84141CAF30F800EE4DE5 /* MasterVC.swift in Sources */,
 				B969F45D1CBE75C500A116AE /* VideosVC.swift in Sources */,
 				B92DDEDD1CAE77BE00D2C34C /* ViewController.swift in Sources */,
-				498B84121CAF2F3900EE4DE5 /* OTP_VC.swift in Sources */,
 				B9BFC0C41CB51BD800FDA2FA /* InmovilizacionesVC.swift in Sources */,
 				49D737711CB5B5EF00B7DD07 /* CorreoVC.swift in Sources */,
 				498B84191CAF335500EE4DE5 /* DondeVC.swift in Sources */,

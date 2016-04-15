@@ -38,6 +38,7 @@ class InmovilizacionesVC: UITableViewController{
         let Cell = self.tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as UITableViewCell
         
         Cell.textLabel?.text = NombresArray[indexPath.row]
+        Cell.textLabel?.textColor = UIColor.whiteColor()
         
         return Cell
     }

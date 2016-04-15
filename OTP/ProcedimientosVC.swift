@@ -42,6 +42,7 @@ class ProcedimientosVC: UITableViewController{
         let Cell = self.tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as UITableViewCell
         
         Cell.textLabel?.text = NombresArray[indexPath.row]
+        Cell.textLabel?.textColor = UIColor.whiteColor()
         Cell.imageView?.image = UIImage(named: ImagenesArray[indexPath.row])
         
         return Cell

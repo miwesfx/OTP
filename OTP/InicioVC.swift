@@ -21,6 +21,8 @@ class InicioVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        //Para ajustar las vistas
         otpButton.imageView?.contentMode = UIViewContentMode.ScaleAspectFit
         masterButton.imageView?.contentMode = UIViewContentMode.ScaleAspectFit
         procedimientosButton.imageView?.contentMode = UIViewContentMode.ScaleAspectFit

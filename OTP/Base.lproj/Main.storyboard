@@ -78,6 +78,9 @@
                                     <action selector="webButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="K8V-8w-eCE"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cHk-sw-L2r">
+                                <rect key="frame" x="12" y="472" width="240" height="128"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3mu-Ev-YFY">
                                 <rect key="frame" x="393" y="311" width="179" height="231"/>
                                 <state key="normal" image="BotonAgarres"/>

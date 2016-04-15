@@ -26,18 +26,12 @@
                                     <segue destination="Q5b-9F-ylf" kind="show" id="Iro-3J-NfF"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="J7Z-HY-vTE">
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="J7Z-HY-vTE">
                                 <rect key="frame" x="304" y="72" width="276" height="216"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <state key="normal" backgroundImage="MasterJCVera">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="Máster J.C. Vera">
-                                            <attributes>
-                                                <font key="NSFont" size="15" name="HelveticaNeue-Bold"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
+                                <state key="normal" image="Master">
+                                    <attributedString key="attributedTitle"/>
                                 </state>
                                 <connections>
                                     <segue destination="xSa-8Q-vCO" kind="show" id="xgE-9s-BTs"/>
@@ -587,7 +581,7 @@
         <image name="BotonAgarres" width="266" height="266"/>
         <image name="BotonInmovilizaciones" width="266" height="266"/>
         <image name="BotonProcedimientos" width="266" height="266"/>
-        <image name="MasterJCVera" width="100" height="89"/>
+        <image name="Master" width="245" height="164"/>
         <image name="OTP fondo negro" width="295" height="175"/>
         <image name="correo" width="133" height="133"/>
         <image name="scenarios" width="366" height="167"/>

@@ -10,6 +10,8 @@ import UIKit
 
 class InicioVC: UIViewController {
     
+    @IBOutlet weak var webButton: UIButton!
+    @IBOutlet weak var correoButton: UIButton!
     @IBOutlet weak var agarresButton: UIButton!
     @IBOutlet weak var inmovilizacionesButton: UIButton!
     @IBOutlet weak var procedimientosButton: UIButton!
@@ -18,6 +20,7 @@ class InicioVC: UIViewController {
     @IBAction func webButton(sender: AnyObject) {
         UIApplication.sharedApplication().openURL(NSURL(string: "http://operativatacticapolicial.org")!)
     }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -28,6 +31,9 @@ class InicioVC: UIViewController {
         procedimientosButton.imageView?.contentMode = UIViewContentMode.ScaleAspectFit
         inmovilizacionesButton.imageView?.contentMode = UIViewContentMode.ScaleAspectFit
         agarresButton.imageView?.contentMode = UIViewContentMode.ScaleAspectFit
+        //correoButton.imageView?.contentMode = UIViewContentMode.ScaleAspectFit
+        //webButton.imageView?.contentMode = UIViewContentMode.ScaleAspectFit
+        
     }
     
     override func didReceiveMemoryWarning() {

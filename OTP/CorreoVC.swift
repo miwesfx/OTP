@@ -26,6 +26,8 @@ class CorreoVC: UIViewController, MFMailComposeViewControllerDelegate {
     
     override func viewDidAppear(animated: Bool) {
         consulta.text = "[Escriba su consulta aquí]"
+        consulta.font = UIFont(name: "Arial", size: 18)
+        consulta.textAlignment = NSTextAlignment.Justified
     }
     
     func DismissKeyboard()

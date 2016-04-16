@@ -72,7 +72,7 @@
             </objects>
             <point key="canvasLocation" x="1583" y="-88"/>
         </scene>
-        <!--Operativa Táctica Policial-->
+        <!--OTP básico-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="InicioVC" customModule="OTP" customModuleProvider="target" sceneMemberID="viewController">
@@ -118,7 +118,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RPE-Xy-4cL">
-                                <rect key="frame" x="520" y="520" width="80" height="80"/>
+                                <rect key="frame" x="518" y="520" width="80" height="80"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="80" id="5mR-Hf-LO9"/>
                                     <constraint firstAttribute="height" constant="80" id="75Q-Ss-54v"/>
@@ -128,8 +128,8 @@
                                     <segue destination="G93-XN-2w1" kind="show" id="Euc-Ic-gsZ"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="scenarios" translatesAutoresizingMaskIntoConstraints="NO" id="xdI-5q-g2n">
-                                <rect key="frame" x="117" y="520" width="366" height="80"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="safecreative" translatesAutoresizingMaskIntoConstraints="NO" id="xdI-5q-g2n">
+                                <rect key="frame" x="112" y="520" width="376" height="80"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="80" id="dTb-kz-PCh"/>
                                 </constraints>
@@ -182,6 +182,7 @@
                             <constraint firstItem="3mu-Ev-YFY" firstAttribute="top" secondItem="J7Z-HY-vTE" secondAttribute="bottom" constant="8" id="jWu-du-LkE"/>
                             <constraint firstAttribute="trailing" secondItem="RPE-Xy-4cL" secondAttribute="trailing" id="jXK-ym-tsr"/>
                             <constraint firstItem="T3S-Qj-ZLf" firstAttribute="top" secondItem="2pb-R3-hTQ" secondAttribute="bottom" constant="8" id="kcY-IS-eJY"/>
+                            <constraint firstAttribute="trailing" secondItem="RPE-Xy-4cL" secondAttribute="trailing" constant="2" id="kfB-ZV-8At"/>
                             <constraint firstItem="xdI-5q-g2n" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lTM-17-4rw"/>
                             <constraint firstItem="exh-WD-xMP" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="noq-WQ-ctu"/>
                             <constraint firstItem="3mu-Ev-YFY" firstAttribute="height" secondItem="Wl0-p5-0W9" secondAttribute="height" id="r9F-Ej-fVJ"/>
@@ -192,8 +193,13 @@
                             <constraint firstItem="3mu-Ev-YFY" firstAttribute="top" secondItem="J7Z-HY-vTE" secondAttribute="bottom" constant="8" id="wqa-yp-CmS"/>
                             <constraint firstItem="J7Z-HY-vTE" firstAttribute="height" secondItem="2pb-R3-hTQ" secondAttribute="height" id="y9o-O1-5Mi"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="jXK-ym-tsr"/>
+                            </mask>
+                        </variation>
                     </view>
-                    <navigationItem key="navigationItem" title="Operativa Táctica Policial" id="N5k-eQ-AL9"/>
+                    <navigationItem key="navigationItem" title="OTP básico" id="N5k-eQ-AL9"/>
                     <connections>
                         <outlet property="agarresButton" destination="3mu-Ev-YFY" id="Uxq-iF-0fJ"/>
                         <outlet property="correoButton" destination="RPE-Xy-4cL" id="6Ta-GT-b3B"/>
@@ -474,7 +480,7 @@
         <image name="Master" width="245" height="164"/>
         <image name="OTP fondo negro" width="295" height="175"/>
         <image name="correo" width="133" height="133"/>
-        <image name="scenarios" width="366" height="167"/>
+        <image name="safecreative" width="376" height="187"/>
         <image name="website" width="170" height="170"/>
     </resources>
     <inferredMetricsTieBreakers>

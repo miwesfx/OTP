@@ -43,6 +43,7 @@ class ProcedimientosVC: UITableViewController{
         
         Cell.textLabel?.text = NombresArray[indexPath.row]
         Cell.textLabel?.textColor = UIColor.whiteColor()
+        Cell.backgroundColor = UIColor.blackColor()
         Cell.imageView?.image = UIImage(named: ImagenesArray[indexPath.row])
         
         return Cell

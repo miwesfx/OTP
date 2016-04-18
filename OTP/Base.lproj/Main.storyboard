@@ -123,15 +123,15 @@
                                     <segue destination="CM2-Ff-MDe" kind="show" id="Wv1-X9-50u"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="J7Z-HY-vTE">
+                            <button opaque="NO" tag="2" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="J7Z-HY-vTE">
                                 <rect key="frame" x="304" y="72" width="276" height="216"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <state key="normal" image="Master">
+                                <state key="normal" image="MasterJCVera">
                                     <attributedString key="attributedTitle"/>
                                 </state>
                                 <connections>
-                                    <segue destination="xSa-8Q-vCO" kind="show" id="xgE-9s-BTs"/>
+                                    <segue destination="ZGB-SQ-nBi" kind="show" id="Kay-E6-L7W"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wl0-p5-0W9">
@@ -148,7 +148,17 @@
                                     <segue destination="zRm-45-daa" kind="show" id="ebY-MY-Gzl"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RPE-Xy-4cL">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wsm-O3-jvz">
+                                <rect key="frame" x="153" y="520" width="295" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="p1z-Y5-bZa"/>
+                                </constraints>
+                                <state key="normal" image="OTP fondo negro"/>
+                                <connections>
+                                    <segue destination="6os-Yl-sV7" kind="showDetail" id="k0o-cY-Ibd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RPE-Xy-4cL">
                                 <rect key="frame" x="518" y="520" width="80" height="80"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="80" id="5mR-Hf-LO9"/>
@@ -175,16 +185,6 @@
                                 <state key="normal" image="BotonAgarres"/>
                                 <connections>
                                     <segue destination="QLb-lU-xog" kind="show" id="qzZ-uc-ygp"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wsm-O3-jvz">
-                                <rect key="frame" x="153" y="520" width="295" height="80"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="80" id="p1z-Y5-bZa"/>
-                                </constraints>
-                                <state key="normal" image="OTP fondo negro"/>
-                                <connections>
-                                    <segue destination="6os-Yl-sV7" kind="showDetail" id="k0o-cY-Ibd"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -252,59 +252,57 @@
             </objects>
             <point key="canvasLocation" x="1583" y="602"/>
         </scene>
-        <!--Máster J.C. Vera-->
-        <scene sceneID="FsO-VY-KXG">
+        <!--Máster J.C.Vera-->
+        <scene sceneID="2o7-uB-Z95">
             <objects>
-                <viewController id="xSa-8Q-vCO" customClass="MasterVC" customModule="OTP" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="ZGB-SQ-nBi" customClass="MasterVeraVC" customModule="OTP" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="aB2-D1-jjr"/>
-                        <viewControllerLayoutGuide type="bottom" id="b01-ch-fEM"/>
+                        <viewControllerLayoutGuide type="top" id="BRH-C7-iHg"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ec4-d3-sbw"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="EUU-4t-We8">
+                    <view key="view" contentMode="scaleToFill" id="oH4-G9-Hsn">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JO5-do-rch">
-                                <rect key="frame" x="0.0" y="72" width="600" height="250"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pqz-ce-Taz">
+                                <rect key="frame" x="20" y="72" width="560" height="154"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="154" id="17j-4q-aB5"/>
+                                </constraints>
+                                <state key="normal" image="playMaster"/>
+                                <connections>
+                                    <segue destination="6os-Yl-sV7" kind="showDetail" id="ifQ-p7-8jh"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="MOo-RK-0wQ">
+                                <rect key="frame" x="28" y="234" width="544" height="346"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                            </webView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="justified" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JLS-nH-iIT">
-                                <rect key="frame" x="20" y="330" width="560" height="250"/>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
-                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="JO5-do-rch" firstAttribute="leading" secondItem="EUU-4t-We8" secondAttribute="leading" id="9qL-p8-Wx6"/>
-                            <constraint firstItem="JLS-nH-iIT" firstAttribute="leading" secondItem="EUU-4t-We8" secondAttribute="leadingMargin" id="EZf-Jd-KYf"/>
-                            <constraint firstItem="JO5-do-rch" firstAttribute="leading" secondItem="EUU-4t-We8" secondAttribute="leadingMargin" id="G9Z-Ue-3Jr"/>
-                            <constraint firstItem="JLS-nH-iIT" firstAttribute="top" secondItem="JO5-do-rch" secondAttribute="bottom" constant="8" id="HyS-jt-h9q"/>
-                            <constraint firstAttribute="trailing" secondItem="JO5-do-rch" secondAttribute="trailing" id="K75-aL-iAA"/>
-                            <constraint firstItem="b01-ch-fEM" firstAttribute="top" secondItem="JLS-nH-iIT" secondAttribute="bottom" constant="20" id="NDA-VE-jOT"/>
-                            <constraint firstItem="JO5-do-rch" firstAttribute="top" secondItem="aB2-D1-jjr" secondAttribute="bottom" constant="8" id="Svd-Yd-zt8"/>
-                            <constraint firstItem="JO5-do-rch" firstAttribute="trailing" secondItem="EUU-4t-We8" secondAttribute="trailingMargin" id="TWB-Fi-ytd"/>
-                            <constraint firstItem="JLS-nH-iIT" firstAttribute="height" secondItem="JO5-do-rch" secondAttribute="height" id="Tf9-cd-Aax"/>
-                            <constraint firstItem="JLS-nH-iIT" firstAttribute="trailing" secondItem="EUU-4t-We8" secondAttribute="trailingMargin" id="cAy-Gq-jEx"/>
-                            <constraint firstItem="JLS-nH-iIT" firstAttribute="top" secondItem="JO5-do-rch" secondAttribute="bottom" constant="8" id="mBm-l8-vso"/>
+                            <constraint firstItem="Pqz-ce-Taz" firstAttribute="leading" secondItem="oH4-G9-Hsn" secondAttribute="leadingMargin" id="4Ce-F8-893"/>
+                            <constraint firstItem="MOo-RK-0wQ" firstAttribute="top" secondItem="Pqz-ce-Taz" secondAttribute="bottom" constant="8" id="7dg-56-fh0"/>
+                            <constraint firstItem="MOo-RK-0wQ" firstAttribute="leading" secondItem="oH4-G9-Hsn" secondAttribute="leadingMargin" constant="8" id="8Kl-Y6-utx"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="MOo-RK-0wQ" secondAttribute="trailing" constant="8" id="JFj-od-dYa"/>
+                            <constraint firstItem="Pqz-ce-Taz" firstAttribute="trailing" secondItem="oH4-G9-Hsn" secondAttribute="trailingMargin" id="JTL-c4-RWh"/>
+                            <constraint firstItem="Ec4-d3-sbw" firstAttribute="top" secondItem="MOo-RK-0wQ" secondAttribute="bottom" constant="20" id="bZF-5M-csj"/>
+                            <constraint firstItem="MOo-RK-0wQ" firstAttribute="top" secondItem="Pqz-ce-Taz" secondAttribute="bottom" constant="8" id="iY7-Od-vkd"/>
+                            <constraint firstItem="Pqz-ce-Taz" firstAttribute="top" secondItem="BRH-C7-iHg" secondAttribute="bottom" constant="8" id="nzw-Ls-NTT"/>
                         </constraints>
-                        <variation key="default">
-                            <mask key="constraints">
-                                <exclude reference="G9Z-Ue-3Jr"/>
-                                <exclude reference="TWB-Fi-ytd"/>
-                            </mask>
-                        </variation>
                     </view>
-                    <navigationItem key="navigationItem" title="Máster J.C. Vera" id="AXi-eZ-IE3"/>
+                    <navigationItem key="navigationItem" title="Máster J.C.Vera" id="kka-a3-1ug"/>
                     <connections>
-                        <outlet property="texto" destination="JLS-nH-iIT" id="fS4-SZ-QBc"/>
-                        <outlet property="videoView" destination="JO5-do-rch" id="WTo-A8-JZg"/>
+                        <outlet property="imagenButton" destination="Pqz-ce-Taz" id="tI2-Ib-Iuh"/>
+                        <outlet property="texto" destination="MOo-RK-0wQ" id="23q-F6-JaU"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="uss-r5-jRR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="edB-eJ-u8L" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2541" y="-842"/>
+            <point key="canvasLocation" x="2541" y="-834"/>
         </scene>
         <!--Procedimientos defensivos-->
         <scene sceneID="SWI-wv-5ZM">
@@ -515,9 +513,10 @@
         <image name="BotonAgarres" width="266" height="266"/>
         <image name="BotonInmovilizaciones" width="266" height="266"/>
         <image name="BotonProcedimientos" width="266" height="266"/>
-        <image name="Master" width="245" height="164"/>
+        <image name="MasterJCVera" width="133" height="166"/>
         <image name="OTP fondo negro" width="295" height="175"/>
         <image name="correo" width="133" height="133"/>
+        <image name="playMaster" width="333" height="184"/>
         <image name="website" width="170" height="170"/>
     </resources>
     <inferredMetricsTieBreakers>

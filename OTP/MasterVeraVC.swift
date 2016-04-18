@@ -1,21 +1,24 @@
 //
-//  MasterVC.swift
+//  MasterVeraVC.swift
 //  OTP
 //
-//  Created by Miguel on 2/4/16.
+//  Created by Miwe sfx on 18/4/16.
 //  Copyright © 2016 Miguel Pérez Prado. All rights reserved.
-//  
+//
 
 import UIKit
+import AVKit
+import AVFoundation
 
-class MasterVC: UIViewController {
-    
+class MasterVeraVC: UIViewController {
+
     @IBOutlet weak var texto: UITextView!
-    @IBOutlet weak var videoView: UIWebView!
+    @IBOutlet weak var imagenButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        imagenButton.imageView?.contentMode = UIViewContentMode.ScaleAspectFit
     }
     
     override func viewDidAppear(animated: Bool) {
@@ -23,18 +26,21 @@ class MasterVC: UIViewController {
         texto.textColor = UIColor.whiteColor()
         texto.font = UIFont(name: "Arial", size: 18)
         texto.textAlignment = NSTextAlignment.Justified
-        
-        /*let youtubeURL = "https://www.youtube.com/embed/Qgb0b3-pkk8?rel=0"
-        videoView.allowsInlineMediaPlayback = true
-        
-        videoView.loadHTMLString("<iframe width=\"\(videoView.frame.width)\" height=\"\(videoView.frame.height)\" src=\"\(youtubeURL)?&playsinline=1\" frameborder=\"0\" allowfullscreen></iframe>", baseURL: nil)*/
-        
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-    
+
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        
+        let direccion = NSURL(string: "http://videos.escuelaprevencionviolencia.es/otp/biojcv.mov")!
+        
+        let DestViewController = segue.destinationViewController as! AVPlayerViewController
+        
+        DestViewController.player = AVPlayer(URL: direccion)
+        DestViewController.player?.play()
+    }
+
 }

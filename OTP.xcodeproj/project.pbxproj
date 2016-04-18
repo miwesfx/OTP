@@ -24,6 +24,7 @@
 		B969F45D1CBE75C500A116AE /* VideosVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B969F45C1CBE75C500A116AE /* VideosVC.swift */; };
 		B969F4651CC10B8300A116AE /* OperativaVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B969F4641CC10B8300A116AE /* OperativaVC.swift */; };
 		B9ACD14E1CC4C74500BABC8A /* Trailer_otp.mov in Resources */ = {isa = PBXBuildFile; fileRef = B9ACD14D1CC4C74500BABC8A /* Trailer_otp.mov */; };
+		B9ACD1501CC4D16A00BABC8A /* MasterVeraVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9ACD14F1CC4D16A00BABC8A /* MasterVeraVC.swift */; };
 		B9BFC0C21CB51B2A00FDA2FA /* ProcedimientosVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9BFC0C11CB51B2A00FDA2FA /* ProcedimientosVC.swift */; };
 		B9BFC0C41CB51BD800FDA2FA /* InmovilizacionesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9BFC0C31CB51BD800FDA2FA /* InmovilizacionesVC.swift */; };
 		B9BFC0C61CB51C2600FDA2FA /* AgarresVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9BFC0C51CB51C2600FDA2FA /* AgarresVC.swift */; };
@@ -70,6 +71,7 @@
 		B969F45C1CBE75C500A116AE /* VideosVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideosVC.swift; sourceTree = "<group>"; };
 		B969F4641CC10B8300A116AE /* OperativaVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OperativaVC.swift; sourceTree = "<group>"; };
 		B9ACD14D1CC4C74500BABC8A /* Trailer_otp.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; name = Trailer_otp.mov; path = ../Trailer_otp.mov; sourceTree = "<group>"; };
+		B9ACD14F1CC4D16A00BABC8A /* MasterVeraVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterVeraVC.swift; sourceTree = "<group>"; };
 		B9BFC0C11CB51B2A00FDA2FA /* ProcedimientosVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProcedimientosVC.swift; sourceTree = "<group>"; };
 		B9BFC0C31CB51BD800FDA2FA /* InmovilizacionesVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InmovilizacionesVC.swift; sourceTree = "<group>"; };
 		B9BFC0C51CB51C2600FDA2FA /* AgarresVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AgarresVC.swift; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 		498B84151CAF320300EE4DE5 /* SupportFiles */ = {
 			isa = PBXGroup;
 			children = (
+				B9ACD14F1CC4D16A00BABC8A /* MasterVeraVC.swift */,
 				B9ACD14D1CC4C74500BABC8A /* Trailer_otp.mov */,
 				49E386F81CC2F5EF006339BB /* WebviewVC.swift */,
 				B969F4641CC10B8300A116AE /* OperativaVC.swift */,
@@ -315,6 +318,7 @@
 				B969F45D1CBE75C500A116AE /* VideosVC.swift in Sources */,
 				B92DDEDD1CAE77BE00D2C34C /* ViewController.swift in Sources */,
 				B9BFC0C41CB51BD800FDA2FA /* InmovilizacionesVC.swift in Sources */,
+				B9ACD1501CC4D16A00BABC8A /* MasterVeraVC.swift in Sources */,
 				49E386F91CC2F5EF006339BB /* WebviewVC.swift in Sources */,
 				49D737711CB5B5EF00B7DD07 /* CorreoVC.swift in Sources */,
 				498B84191CAF335500EE4DE5 /* DondeVC.swift in Sources */,

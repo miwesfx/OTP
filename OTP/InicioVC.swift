@@ -67,14 +67,16 @@ class InicioVC: UIViewController {
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         
+        if (sender!.tag != 2)
+            {
+                let path = NSBundle.mainBundle().pathForResource("Trailer_otp", ofType: "mov")
+                let direccion = NSURL(fileURLWithPath: path!)
         
-        let path = NSBundle.mainBundle().pathForResource("Trailer_otp", ofType: "mov")
-        let direccion = NSURL(fileURLWithPath: path!)
+                let DestViewController = segue.destinationViewController as! AVPlayerViewController
         
-        let DestViewController = segue.destinationViewController as! AVPlayerViewController
-        
-        DestViewController.player = AVPlayer(URL: direccion)
-        DestViewController.player?.play()
+                DestViewController.player = AVPlayer(URL: direccion)
+                DestViewController.player?.play()
+            }
     }
     
 }

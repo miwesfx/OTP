@@ -25,6 +25,7 @@ class OperativaVC: UIViewController {
         texto.textColor = UIColor.whiteColor()
         texto.font = UIFont(name: "Arial", size: 18)
         texto.textAlignment = NSTextAlignment.Justified
+        imagen.image = UIImage(named: "banner3")
     }
     
     override func didReceiveMemoryWarning() {
@@ -38,6 +39,8 @@ class OperativaVC: UIViewController {
             texto.textColor = UIColor.whiteColor()
             texto.font = UIFont(name: "Arial", size: 18)
             texto.textAlignment = NSTextAlignment.Justified
+            imagen.image = UIImage(named: "banner3")
+                
             }
         if controller.selectedSegmentIndex == 1
             {
@@ -45,6 +48,7 @@ class OperativaVC: UIViewController {
             texto.textColor = UIColor.whiteColor()
             texto.font = UIFont(name: "Arial", size: 18)
             texto.textAlignment = NSTextAlignment.Justified
+            imagen.image = UIImage(named: "banner2")
             }
         if controller.selectedSegmentIndex == 2
             {
@@ -52,6 +56,7 @@ class OperativaVC: UIViewController {
             texto.textColor = UIColor.whiteColor()
             texto.font = UIFont(name: "Arial", size: 18)
             texto.textAlignment = NSTextAlignment.Justified
+            imagen.image = UIImage(named: "banner1")
             }
     }
 

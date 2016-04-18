@@ -65,7 +65,7 @@
                                 </connections>
                             </segmentedControl>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="justified" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JPJ-hT-AEA">
-                                <rect key="frame" x="20" y="146" width="560" height="434"/>
+                                <rect key="frame" x="20" y="334" width="560" height="246"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -79,13 +79,23 @@
                                     <segue destination="kVp-c7-eO1" kind="show" id="7or-WV-2iq"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="JNg-hT-eQm">
+                                <rect key="frame" x="20" y="146" width="560" height="180"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="180" id="H32-g6-SOX"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="TKt-lR-wy5" firstAttribute="trailing" secondItem="IRx-xn-H4O" secondAttribute="trailingMargin" id="7Zk-wj-CcM"/>
                             <constraint firstItem="raf-xG-6z2" firstAttribute="centerX" secondItem="IRx-xn-H4O" secondAttribute="centerX" id="80b-cB-1Gp"/>
                             <constraint firstItem="JPJ-hT-AEA" firstAttribute="leading" secondItem="IRx-xn-H4O" secondAttribute="leadingMargin" id="GIK-9g-mDK"/>
-                            <constraint firstItem="JPJ-hT-AEA" firstAttribute="top" secondItem="raf-xG-6z2" secondAttribute="bottom" constant="8" id="eG0-zh-9cu"/>
+                            <constraint firstItem="JNg-hT-eQm" firstAttribute="trailing" secondItem="IRx-xn-H4O" secondAttribute="trailingMargin" id="J93-TH-k7F"/>
+                            <constraint firstItem="JNg-hT-eQm" firstAttribute="leading" secondItem="IRx-xn-H4O" secondAttribute="leadingMargin" id="NPK-Ns-I0j"/>
+                            <constraint firstItem="JPJ-hT-AEA" firstAttribute="top" secondItem="JNg-hT-eQm" secondAttribute="bottom" constant="8" id="SiU-cd-mHq"/>
+                            <constraint firstItem="JPJ-hT-AEA" firstAttribute="top" secondItem="JNg-hT-eQm" secondAttribute="bottom" constant="8" id="TKV-eL-VTP"/>
+                            <constraint firstItem="JNg-hT-eQm" firstAttribute="top" secondItem="raf-xG-6z2" secondAttribute="bottom" constant="8" id="eV3-vU-cZb"/>
                             <constraint firstItem="TKt-lR-wy5" firstAttribute="top" secondItem="0GW-bu-n45" secondAttribute="bottom" constant="8" id="gb5-vn-eNM"/>
                             <constraint firstItem="TKt-lR-wy5" firstAttribute="leading" secondItem="IRx-xn-H4O" secondAttribute="leadingMargin" id="nMt-vB-THX"/>
                             <constraint firstItem="d5i-5c-LoS" firstAttribute="top" secondItem="JPJ-hT-AEA" secondAttribute="bottom" constant="20" id="qu7-rw-vFC"/>
@@ -96,6 +106,7 @@
                     <navigationItem key="navigationItem" title="OTP" id="6ZK-fE-ZuF"/>
                     <connections>
                         <outlet property="controller" destination="TKt-lR-wy5" id="TL6-jZ-bJP"/>
+                        <outlet property="imagen" destination="JNg-hT-eQm" id="z3R-FV-nGd"/>
                         <outlet property="texto" destination="JPJ-hT-AEA" id="AFa-CG-BoF"/>
                     </connections>
                 </viewController>
@@ -115,7 +126,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2pb-R3-hTQ">
+                            <button opaque="NO" tag="2" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2pb-R3-hTQ">
                                 <rect key="frame" x="20" y="72" width="276" height="216"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" image="OTP fondo negro"/>
@@ -134,14 +145,14 @@
                                     <segue destination="ZGB-SQ-nBi" kind="show" id="Kay-E6-L7W"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wl0-p5-0W9">
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wl0-p5-0W9">
                                 <rect key="frame" x="20" y="296" width="179" height="216"/>
                                 <state key="normal" image="BotonProcedimientos"/>
                                 <connections>
                                     <segue destination="39G-Hq-3BZ" kind="show" id="GK5-ya-teR"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T3S-Qj-ZLf">
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T3S-Qj-ZLf">
                                 <rect key="frame" x="207" y="296" width="178" height="216"/>
                                 <state key="normal" image="BotonInmovilizaciones"/>
                                 <connections>
@@ -169,7 +180,7 @@
                                     <segue destination="G93-XN-2w1" kind="show" id="Euc-Ic-gsZ"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="exh-WD-xMP">
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="exh-WD-xMP">
                                 <rect key="frame" x="0.0" y="520" width="80" height="80"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="80" id="Smx-d0-UWB"/>
@@ -180,7 +191,7 @@
                                     <action selector="webButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="K8V-8w-eCE"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3mu-Ev-YFY">
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3mu-Ev-YFY">
                                 <rect key="frame" x="393" y="296" width="179" height="216"/>
                                 <state key="normal" image="BotonAgarres"/>
                                 <connections>

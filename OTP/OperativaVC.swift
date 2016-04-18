@@ -21,7 +21,7 @@ class OperativaVC: UIViewController {
     }
     
     override func viewDidAppear(animated: Bool) {
-        texto.text = "Operativa táctica policial.\n\nTras estudios teórico-prácticos sobre las necesidades del Policía en el ejercicio de sus funciones, en el ámbito de la profesión que desarrolla a pie de calle, en el contexto de una sociedad democrática sometida al Estado de Derecho, según directrices de Naciones Unidas con el fin de  proteger a los ciudadanos, realizados desde el enfoque de la Prevención de Riesgos Laborales y la Prevención de riesgos en general, ofrecen unos protocolos, técnicas y procedimientos de intervención policial dirigidos específicamente a la labor de las Fuerzas y Cuerpos de Seguridad, los cuales denominamos Operativa\nÚNICA FORMACIÓN EN INTERVENCION POLICIAL GARANTIZADA BAJO INVESTIGACIÓN CIENTÍFICA I+D+i."
+        texto.text = "Operativa táctica policial.\n\nTras estudios teórico-prácticos sobre las necesidades del Policía en el ejercicio de sus funciones, en el ámbito de la profesión que desarrolla a pie de calle, en el contexto de una sociedad democrática sometida al Estado de Derecho, según directrices de Naciones Unidas con el fin de  proteger a los ciudadanos, realizados desde el enfoque de la Prevención de Riesgos Laborales y la Prevención de riesgos en general, ofrecen unos protocolos, técnicas y procedimientos de intervención policial dirigidos específicamente a la labor de las Fuerzas y Cuerpos de Seguridad, los cuales denominamos Operativa Táctica Policial\nÚNICA FORMACIÓN EN INTERVENCION POLICIAL GARANTIZADA BAJO INVESTIGACIÓN CIENTÍFICA I+D+i."
         texto.textColor = UIColor.whiteColor()
         texto.font = UIFont(name: "Arial", size: 18)
         texto.textAlignment = NSTextAlignment.Justified

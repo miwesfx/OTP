@@ -4,12 +4,16 @@
 //
 //  Created by Miwe sfx on 1/4/16.
 //  Copyright © 2016 Miguel Pérez Prado. All rights reserved.
-//  
+//
 
 import UIKit
+import AVKit
+import AVFoundation
+
 
 class InicioVC: UIViewController {
     
+    @IBOutlet weak var trailerotpButtonImage: UIButton!
     @IBOutlet weak var webButton: UIButton!
     @IBOutlet weak var correoButton: UIButton!
     @IBOutlet weak var agarresButton: UIButton!
@@ -31,6 +35,7 @@ class InicioVC: UIViewController {
         procedimientosButton.imageView?.contentMode = UIViewContentMode.ScaleAspectFit
         inmovilizacionesButton.imageView?.contentMode = UIViewContentMode.ScaleAspectFit
         agarresButton.imageView?.contentMode = UIViewContentMode.ScaleAspectFit
+        trailerotpButtonImage.imageView?.contentMode = UIViewContentMode.ScaleAspectFit
         
         masterButton.layer.cornerRadius = 5
         masterButton.layer.borderWidth = 1
@@ -60,5 +65,16 @@ class InicioVC: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        
+        
+        let path = NSBundle.mainBundle().pathForResource("Trailer_otp", ofType: "mov")
+        let direccion = NSURL(fileURLWithPath: path!)
+        
+        let DestViewController = segue.destinationViewController as! AVPlayerViewController
+        
+        DestViewController.player = AVPlayer(URL: direccion)
+        DestViewController.player?.play()
+    }
     
 }

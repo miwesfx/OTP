@@ -1,3 +1,18 @@
+/* Agarre brazo: Control al suelo */
+"Agarre brazo: Control al suelo" = "Technique against grip of the neck (TOP CONTROL)";
+
+/* Agarre brazo: Control arriba */
+"Agarre brazo: Control arriba" = "Technique against grip of the arm (TOP CONTROL)";
+
+/* Agarre cuello: Control al suelo */
+"Agarre cuello: Control al suelo" = "Technique against grip of the neck  (control on the floor)";
+
+/* Agarre de muñeca */
+"Agarre de muñeca" = "Technique against grip of the wrist";
+
+/* Agarre de muñeca cruzado */
+"Agarre de muñeca cruzado" = "Technique against crossed grip";
+
 /* Bloqueos ante golpes ascendentes */
 "Bloqueos ante golpes ascendentes" = "Blocking techniques for uppercut punches";
 
@@ -186,6 +201,21 @@ HISTORIAL DE COMPETICION EN LA MODALIDAD DE KICK BOXING
             •	Intermediate Level Sports Technician Kick Boxing (2007-2009)
             •	University expert in Criminalistics and Public Security (2008-2011. University of Cádiz)
             •	University Instructor in Operative Police Tactics (2010-2011, University of Cádiz)";
+
+/* enlace2 */
+"http://videos.escuelaprevencionviolencia.es/otp/aga-brazo-sue.mp4" = "http://videos.escuelaprevencionviolencia.es/otpin/gca.mp4";
+
+/* enlace3 */
+"http://videos.escuelaprevencionviolencia.es/otp/aga-cue-aba.mp4" = "http://videos.escuelaprevencionviolencia.es/otpin/gc.mp4";
+
+/* enlace4 */
+"http://videos.escuelaprevencionviolencia.es/otp/aga-mun-cruza.mp4" = "http://videos.escuelaprevencionviolencia.es/otpin/gcw.mp4";
+
+/* enlace5 */
+"http://videos.escuelaprevencionviolencia.es/otp/aga-mune.mp4" = "http://videos.escuelaprevencionviolencia.es/otpin/gw.mp4";
+
+/* enlace1 */
+"http://videos.escuelaprevencionviolencia.es/otp/agarre-bra-arri.mp4" = "http://videos.escuelaprevencionviolencia.es/otpin/gas.mp4";
 
 /* enlace1 */
 "http://videos.escuelaprevencionviolencia.es/otp/ba1-arr.mp4" = "http://videos.escuelaprevencionviolencia.es/otpin/Basic1a.mp4";

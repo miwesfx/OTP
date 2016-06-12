@@ -20,9 +20,9 @@ class AgarresVC: UITableViewController{
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        NombresArray = ["Agarre brazo: Control arriba","Agarre brazo: Control al suelo","Agarre cuello: Control al suelo","Agarre de muñeca cruzado", "Agarre de muñeca"]
+        NombresArray = [NSLocalizedString("Agarre brazo: Control arriba", comment: "Agarre brazo: Control arriba"),NSLocalizedString("Agarre brazo: Control al suelo", comment: "Agarre brazo: Control al suelo"),NSLocalizedString("Agarre cuello: Control al suelo", comment: "Agarre cuello: Control al suelo"),NSLocalizedString("Agarre de muñeca cruzado", comment: "Agarre de muñeca cruzado"), NSLocalizedString("Agarre de muñeca", comment: "Agarre de muñeca")]
         
-        EnlacesArray = ["http://videos.escuelaprevencionviolencia.es/otp/agarre-bra-arri.mp4", "http://videos.escuelaprevencionviolencia.es/otp/aga-brazo-sue.mp4", "http://videos.escuelaprevencionviolencia.es/otp/aga-cue-aba.mp4", "http://videos.escuelaprevencionviolencia.es/otp/aga-mun-cruza.mp4", "http://videos.escuelaprevencionviolencia.es/otp/aga-mune.mp4"]
+        EnlacesArray = [NSLocalizedString("http://videos.escuelaprevencionviolencia.es/otp/agarre-bra-arri.mp4", comment: "enlace1"), NSLocalizedString("http://videos.escuelaprevencionviolencia.es/otp/aga-brazo-sue.mp4", comment: "enlace2"), NSLocalizedString("http://videos.escuelaprevencionviolencia.es/otp/aga-cue-aba.mp4", comment: "enlace3"), NSLocalizedString("http://videos.escuelaprevencionviolencia.es/otp/aga-mun-cruza.mp4", comment: "enlace4"), NSLocalizedString("http://videos.escuelaprevencionviolencia.es/otp/aga-mune.mp4", comment: "enlace5")]
         
         ImagenesArray = ["agarre brazo","agarre brazo","agarre cuello","agarre cruzado","agarre muneca"]
     }

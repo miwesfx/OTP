@@ -1,0 +1,48 @@
+/* Class = "UIBarButtonItem"; title = "Atrás"; ObjectID = "4hQ-Qq-vpG"; */
+"4hQ-Qq-vpG.title" = "Back";
+
+/* Class = "UINavigationItem"; title = "OTP"; ObjectID = "6ZK-fE-ZuF"; */
+"6ZK-fE-ZuF.title" = "OTP";
+
+/* Class = "UINavigationItem"; title = "Procedimientos defensivos"; ObjectID = "FYo-GE-Ng9"; */
+"FYo-GE-Ng9.title" = "Defensive procedures";
+
+/* Class = "UINavigationItem"; title = "Inmovilizaciones básicas"; ObjectID = "HP7-vZ-0xd"; */
+"HP7-vZ-0xd.title" = "Immobilizations";
+
+/* Class = "UINavigationItem"; title = "OTP básico"; ObjectID = "N5k-eQ-AL9"; */
+"N5k-eQ-AL9.title" = "OTP basic";
+
+/* Class = "UISegmentedControl"; TKt-lR-wy5.segmentTitles[0] = "¿Qué es OTP?"; ObjectID = "TKt-lR-wy5"; */
+"TKt-lR-wy5.segmentTitles[0]" = "What is OTP?";
+
+/* Class = "UISegmentedControl"; TKt-lR-wy5.segmentTitles[1] = "¿Dónde inicia?"; ObjectID = "TKt-lR-wy5"; */
+"TKt-lR-wy5.segmentTitles[1]" = "Origins";
+
+/* Class = "UISegmentedControl"; TKt-lR-wy5.segmentTitles[2] = "Objetivos"; ObjectID = "TKt-lR-wy5"; */
+"TKt-lR-wy5.segmentTitles[2]" = "Goals";
+
+/* Class = "UILabel"; text = "Consulta:"; ObjectID = "VuO-Nj-WBs"; */
+"VuO-Nj-WBs.text" = "Query:";
+
+/* Class = "UINavigationItem"; title = "Ante agarres"; ObjectID = "cm8-62-4Yi"; */
+"cm8-62-4Yi.title" = "Against grip";
+
+/* Class = "UINavigationItem"; title = "Máster J.C.Vera"; ObjectID = "kka-a3-1ug"; */
+"kka-a3-1ug.title" = "Master J.C.Vera";
+
+/* Class = "UINavigationItem"; title = "Prezi"; ObjectID = "mRZ-Am-VAC"; */
+"mRZ-Am-VAC.title" = "Prezi";
+
+/* Class = "UIBarButtonItem"; title = "Atrás"; ObjectID = "pdz-JF-S9L"; */
+"pdz-JF-S9L.title" = "back";
+
+/* Class = "UIButton"; normalTitle = "-> Ir a presentación Prezi <-"; ObjectID = "raf-xG-6z2"; */
+"raf-xG-6z2.normalTitle" = "-> Go to Prezi <-";
+
+/* Class = "UILabel"; text = "Nombre:"; ObjectID = "uti-fH-0ha"; */
+"uti-fH-0ha.text" = "Name:";
+
+/* Class = "UIButton"; normalTitle = "Enviar"; ObjectID = "x0z-MP-Tf6"; */
+"x0z-MP-Tf6.normalTitle" = "Send";
+

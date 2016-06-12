@@ -21,9 +21,9 @@ class InmovilizacionesVC: UITableViewController{
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        NombresArray = ["Técnica básica 1: Control arriba","Técnica básica 1: Control al suelo","Técnica básica 2","Técnica básica 3: Control arriba", "Técnica básica 4: Esquivas parciales ante golpes directos"]
+        NombresArray = [NSLocalizedString("Técnica básica 1: Control arriba", comment: "Técnica básica 1: Control arriba"),NSLocalizedString("Técnica básica 1: Control al suelo", comment: "Técnica básica 1: Control al suelo"),NSLocalizedString("Técnica básica 2", comment: "Técnica básica 2"),NSLocalizedString("Técnica básica 3: Control arriba", comment: "Técnica básica 3: Control arriba"), NSLocalizedString("Técnica básica 4: Esquivas parciales ante golpes directos", comment: "Técnica básica 4: Esquivas parciales ante golpes directos")]
         
-        EnlacesArray = ["http://videos.escuelaprevencionviolencia.es/otp/ba1-arr.mp4", "http://videos.escuelaprevencionviolencia.es/otp/ba1-sue.mp4", "http://videos.escuelaprevencionviolencia.es/otp/ba2.mp4", "http://videos.escuelaprevencionviolencia.es/otp/ba3.mp4", "http://videos.escuelaprevencionviolencia.es/otp/ba4.mp4"]
+        EnlacesArray = [NSLocalizedString("http://videos.escuelaprevencionviolencia.es/otp/ba1-arr.mp4", comment: "enlace1"), NSLocalizedString("http://videos.escuelaprevencionviolencia.es/otp/ba1-sue.mp4", comment: "enlace2"), NSLocalizedString("http://videos.escuelaprevencionviolencia.es/otp/ba2.mp4", comment: "enlace3"), NSLocalizedString("http://videos.escuelaprevencionviolencia.es/otp/ba3.mp4", comment: "enlace4"), NSLocalizedString("http://videos.escuelaprevencionviolencia.es/otp/ba4.mp4", comment: "enlace5")]
         
         ImagenesArray = ["tecnicabasica1","tecnicabasica1","tecnicabasica2","tecnicabasica3","tecnicabasica4"]
     }

@@ -97,6 +97,21 @@ Tras estudios teórico-prácticos sobre las necesidades del Policía en el ejerc
 /* Posición de seguridad */
 "Posición de seguridad" = "Safety position";
 
+/* Técnica básica 1: Control al suelo */
+"Técnica básica 1: Control al suelo" = "Basic immobilization technique nº1 (control on the floor)";
+
+/* Técnica básica 1: Control arriba */
+"Técnica básica 1: Control arriba" = "Basic immobilization technique nº1 (control, top)";
+
+/* Técnica básica 2 */
+"Técnica básica 2" = "Basic immobilization technique nº2";
+
+/* Técnica básica 3: Control arriba */
+"Técnica básica 3: Control arriba" = "Basic immobilization technique nº3";
+
+/* Técnica básica 4: Esquivas parciales ante golpes directos */
+"Técnica básica 4: Esquivas parciales ante golpes directos" = "Basic immobilization technique nº4 (control on the floor)";
+
 /* biografia */
 "Títulos académicos oficiales:
 
@@ -171,6 +186,21 @@ HISTORIAL DE COMPETICION EN LA MODALIDAD DE KICK BOXING
             •	Intermediate Level Sports Technician Kick Boxing (2007-2009)
             •	University expert in Criminalistics and Public Security (2008-2011. University of Cádiz)
             •	University Instructor in Operative Police Tactics (2010-2011, University of Cádiz)";
+
+/* enlace1 */
+"http://videos.escuelaprevencionviolencia.es/otp/ba1-arr.mp4" = "http://videos.escuelaprevencionviolencia.es/otpin/Basic1a.mp4";
+
+/* enlace2 */
+"http://videos.escuelaprevencionviolencia.es/otp/ba1-sue.mp4" = "http://videos.escuelaprevencionviolencia.es/otpin/Basic1s.mp4";
+
+/* enlace3 */
+"http://videos.escuelaprevencionviolencia.es/otp/ba2.mp4" = "http://videos.escuelaprevencionviolencia.es/otpin/Basic2.mp4";
+
+/* enlace4 */
+"http://videos.escuelaprevencionviolencia.es/otp/ba3.mp4" = "http://videos.escuelaprevencionviolencia.es/otpin/Basic3.mp4";
+
+/* enlace5 */
+"http://videos.escuelaprevencionviolencia.es/otp/ba4.mp4" = "http://videos.escuelaprevencionviolencia.es/otpin/Basic4.mp4";
 
 /* enlace9 */
 "http://videos.escuelaprevencionviolencia.es/otp/bloq-asc.mp4" = "http://videos.escuelaprevencionviolencia.es/otpin/bloq.asc.mp4";

@@ -1,0 +1,48 @@
+
+/* Class = "UIBarButtonItem"; title = "Atrás"; ObjectID = "4hQ-Qq-vpG"; */
+"4hQ-Qq-vpG.title" = "Atrás";
+
+/* Class = "UINavigationItem"; title = "OTP"; ObjectID = "6ZK-fE-ZuF"; */
+"6ZK-fE-ZuF.title" = "OTP";
+
+/* Class = "UINavigationItem"; title = "Procedimientos defensivos"; ObjectID = "FYo-GE-Ng9"; */
+"FYo-GE-Ng9.title" = "Procedimientos defensivos";
+
+/* Class = "UINavigationItem"; title = "Inmovilizaciones básicas"; ObjectID = "HP7-vZ-0xd"; */
+"HP7-vZ-0xd.title" = "Inmovilizaciones básicas";
+
+/* Class = "UINavigationItem"; title = "OTP básico"; ObjectID = "N5k-eQ-AL9"; */
+"N5k-eQ-AL9.title" = "OTP básico";
+
+/* Class = "UISegmentedControl"; TKt-lR-wy5.segmentTitles[0] = "¿Qué es OTP?"; ObjectID = "TKt-lR-wy5"; */
+"TKt-lR-wy5.segmentTitles[0]" = "¿Qué es OTP?";
+
+/* Class = "UISegmentedControl"; TKt-lR-wy5.segmentTitles[1] = "¿Dónde inicia?"; ObjectID = "TKt-lR-wy5"; */
+"TKt-lR-wy5.segmentTitles[1]" = "¿Dónde inicia?";
+
+/* Class = "UISegmentedControl"; TKt-lR-wy5.segmentTitles[2] = "Objetivos"; ObjectID = "TKt-lR-wy5"; */
+"TKt-lR-wy5.segmentTitles[2]" = "Objetivos";
+
+/* Class = "UILabel"; text = "Consulta:"; ObjectID = "VuO-Nj-WBs"; */
+"VuO-Nj-WBs.text" = "Consulta:";
+
+/* Class = "UINavigationItem"; title = "Ante agarres"; ObjectID = "cm8-62-4Yi"; */
+"cm8-62-4Yi.title" = "Ante agarres";
+
+/* Class = "UINavigationItem"; title = "Máster J.C.Vera"; ObjectID = "kka-a3-1ug"; */
+"kka-a3-1ug.title" = "Máster J.C.Vera";
+
+/* Class = "UINavigationItem"; title = "Prezi"; ObjectID = "mRZ-Am-VAC"; */
+"mRZ-Am-VAC.title" = "Prezi";
+
+/* Class = "UIBarButtonItem"; title = "Atrás"; ObjectID = "pdz-JF-S9L"; */
+"pdz-JF-S9L.title" = "Atrás";
+
+/* Class = "UIButton"; normalTitle = "-> Ir a presentación Prezi <-"; ObjectID = "raf-xG-6z2"; */
+"raf-xG-6z2.normalTitle" = "-> Ir a presentación Prezi <-";
+
+/* Class = "UILabel"; text = "Nombre:"; ObjectID = "uti-fH-0ha"; */
+"uti-fH-0ha.text" = "Nombre:";
+
+/* Class = "UIButton"; normalTitle = "Enviar"; ObjectID = "x0z-MP-Tf6"; */
+"x0z-MP-Tf6.normalTitle" = "Enviar";

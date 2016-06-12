@@ -257,10 +257,10 @@
 			};
 			buildConfigurationList = B92DDED21CAE77BE00D2C34C /* Build configuration list for PBXProject "OTP" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = Spanish;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				en,
+				es,
 				Base,
 			);
 			mainGroup = B92DDECE1CAE77BE00D2C34C;

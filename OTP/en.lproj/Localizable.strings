@@ -1,3 +1,24 @@
+/* Bloqueos ante golpes ascendentes */
+"Bloqueos ante golpes ascendentes" = "Blocking techniques for uppercut punches";
+
+/* Bloqueos ante golpes circulares */
+"Bloqueos ante golpes circulares" = "Blocking techniques for circular punches";
+
+/* Desplazamientos */
+"Desplazamientos" = "Displacements";
+
+/* Desvíos ante golpes directos */
+"Desvíos ante golpes directos" = "Deviation techniques of straight punches";
+
+/* Distancias */
+"Distancias" = "Distances";
+
+/* Esquivas parciales ante golpes circulares */
+"Esquivas parciales ante golpes circulares" = "Dodges of circular punches";
+
+/* Esquivas parciales ante golpes directos */
+"Esquivas parciales ante golpes directos" = "Partial dodges of straight punches";
+
 /* objetivos */
 "Los objetivos buscados y conseguidos donde se ha aplicado la OTP han sido:
 
@@ -69,6 +90,12 @@ Tras estudios teórico-prácticos sobre las necesidades del Policía en el ejerc
 
 Tras estudios teórico-prácticos sobre las necesidades del Policía en el ejercicio de sus funciones, en el ámbito de la profesión que desarrolla a pie de calle, en el contexto de una sociedad democrática sometida al Estado de Derecho, según directrices de Naciones Unidas con el fin de  proteger a los ciudadanos, realizados desde el enfoque de la Prevención de Riesgos Laborales y la Prevención de riesgos en general, ofrecen unos protocolos, técnicas y procedimientos de intervención policial dirigidos específicamente a la labor de las Fuerzas y Cuerpos de Seguridad, los cuales denominamos Operativa Táctica Policial
 ÚNICA FORMACIÓN EN INTERVENCION POLICIAL GARANTIZADA BAJO INVESTIGACIÓN CIENTÍFICA I+D+i." = "Theoretical and practical studies about the needs of police interventions over the citizens in our democratic society under the rule of law, according to guidelines of international rules in order to protect the citizens have been developed from the point of view of prevention of occupational risks and the prevention of risks in general, offering protocols, techniques and procedures of police intervention specifically focused to the work of the forces and security units, which we call Operational Police Tactic (OTP).";
+
+/* Posición de guardia */
+"Posición de guardia" = "The Guard Position";
+
+/* Posición de seguridad */
+"Posición de seguridad" = "Safety position";
 
 /* biografia */
 "Títulos académicos oficiales:
@@ -144,4 +171,31 @@ HISTORIAL DE COMPETICION EN LA MODALIDAD DE KICK BOXING
             •	Intermediate Level Sports Technician Kick Boxing (2007-2009)
             •	University expert in Criminalistics and Public Security (2008-2011. University of Cádiz)
             •	University Instructor in Operative Police Tactics (2010-2011, University of Cádiz)";
+
+/* enlace9 */
+"http://videos.escuelaprevencionviolencia.es/otp/bloq-asc.mp4" = "http://videos.escuelaprevencionviolencia.es/otpin/bloq.asc.mp4";
+
+/* enlace8 */
+"http://videos.escuelaprevencionviolencia.es/otp/bloq-cir.mp4" = "http://videos.escuelaprevencionviolencia.es/otpin/bloq.cir.mp4";
+
+/* enlace4 */
+"http://videos.escuelaprevencionviolencia.es/otp/desplaz.mp4" = "http://videos.escuelaprevencionviolencia.es/otpin/dispalcements.mp4";
+
+/* enlace7 */
+"http://videos.escuelaprevencionviolencia.es/otp/desvi-direc.mp4" = "http://videos.escuelaprevencionviolencia.es/otpin/des.direc.mp4";
+
+/* enlace3 */
+"http://videos.escuelaprevencionviolencia.es/otp/distan.mp4" = "http://videos.escuelaprevencionviolencia.es/otpin/distance.mp4";
+
+/* enlace6 */
+"http://videos.escuelaprevencionviolencia.es/otp/es-par-cir.mp4" = "http://videos.escuelaprevencionviolencia.es/otpin/esq.cir.mp4";
+
+/* enlace5 */
+"http://videos.escuelaprevencionviolencia.es/otp/es-par-direc.mp4" = "http://videos.escuelaprevencionviolencia.es/otpin/esq.direc.mp4";
+
+/* enlace2 */
+"http://videos.escuelaprevencionviolencia.es/otp/pgua.mp4" = "http://videos.escuelaprevencionviolencia.es/otpin/guard.pos.mp4";
+
+/* enlace1 */
+"http://videos.escuelaprevencionviolencia.es/otp/pseg.mp4" = "http://videos.escuelaprevencionviolencia.es/otpin/safe.pos.mp4";
 
